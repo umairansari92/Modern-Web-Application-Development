@@ -54,6 +54,7 @@ This course is designed to teach complete web and web application development, u
 - Understanding `<!DOCTYPE html>` and setting up a basic HTML page
 - Definition lists and nested lists
 - Anchor tags and linking pages with `<a>`
+- Create multiple pages and link them with each other.
 
 ## How to Use
 1. Clone this repository:
