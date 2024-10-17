@@ -5,6 +5,7 @@ This repository contains my progress and work through the **Modern Web Applicati
 ## Table of Contents
 - [Course Overview](#course-overview)
 - [Technologies Covered](#technologies-covered)
+- [Book Reference](#book-reference)
 - [Class Overview](#class-overview)
   - [Class 1](#class-1)
   - [Class 2](#class-2)
@@ -28,6 +29,10 @@ This course is designed to teach complete web and web application development, u
 - **Databases**: MySQL, MongoDB
 - **API Integrations**: REST APIs, GraphQL
 - **Payment Gateways**: Stripe, PayPal, etc.
+
+## Book Reference
+I am following **Jon Duckett's HTML & CSS** as a primary reference for Module 1 of this course. You can find it [here](https://github.com/umairansari92/Modern-Web-Application-Development/tree/8ca163f9ca12e8c72d0ad1ef0e911492ebc8c74a/Books).
+
 
 ## Class Overview
 
