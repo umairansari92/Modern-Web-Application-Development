@@ -11,6 +11,7 @@ This repository contains my progress and work through the **Modern Web Applicati
   - [Class 2](#class-2)
   - [Class 3](#class-3)
   - [Class 4](#class-4)
+  - [Class 5](#class-5)
 - [How to Use](#how-to-use)
 - [Future Updates](#future-updates)
 
@@ -60,6 +61,22 @@ I am following **Jon Duckett's HTML & CSS** as a primary reference for Module 1 
 - Definition lists and nested lists
 - Anchor tags and linking pages with `<a>`
 - Create multiple pages and link them with each other.
+
+### [Class 5](#)
+**Date:** 20-10-2024  
+**Topics:**
+- Opening links in a new window using the `target` attribute with `_blank`
+- Difference between absolute and relative URLs
+  - **Absolute URLs**: Fixed URLs that navigate to an external website.
+  - **Relative URLs**: URLs that navigate within the current site.
+- Using `mailto` links to create email actions.
+- Introduction to adding images to web pages and choosing the right formats for the web.
+
+#### Example:
+- To open a link in a new tab:
+  ```html
+  <a href="https://example.com" target="_blank">Visit Example</a>
+- To create a mail link: <a href="mailto:someone@example.com">Email Us</a>
 
 ## How to Use
 1. Clone this repository:
