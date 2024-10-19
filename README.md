@@ -76,7 +76,9 @@ I am following **Jon Duckett's HTML & CSS** as a primary reference for Module 1 
 - To open a link in a new tab:
   ```html
   <a href="https://example.com" target="_blank">Visit Example</a>
-- To create a mail link: <'a href="mailto:someone@example.com">Email Us</a>
+- To create a mail link:
+ ```html
+  <a href="mailto:someone@example.com">Email Us</a>
 
 ## How to Use
 1. Clone this repository:
