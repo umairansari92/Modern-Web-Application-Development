@@ -23,16 +23,20 @@
             <input type="text" placeholder="Enter Your Full Name" id="name">
             <label for="fname">Father's Name</label>
             <input type="text" placeholder="Enter Your Father's Name" id="fname">
-            <label for="gender" id="gender">Gender:</label>
+
+
+            <label for="gender" id="gender" required>Gender:</label>
             <label for="male">Male
-                <input type="radio" name="gender" id="male" checked>
+                <input type="radio" name="gender" id="gender" checked>
             </label>
             <label for="female">Female
-                <input type="radio" name="gender" id="female">
+                <input type="radio" name="gender" id="gender">
             </label>
             <label for="other">Other
-                <input type="radio" name="gender" id="other">
+                <input type="radio" name="gender" id="gender">
             </label>
+
+
             <label for="marital">Marital Status</label>
             <select name="marital" id="marital">
                 <option value="" disabled selected>Select One</option>
@@ -55,7 +59,8 @@
             <input type="date" name="dob" id="dob">
 
             <label for="address">Current Address</label>
-            <textarea cols="15" rows="5" for="address" name="address" id="address">Current Address:</textarea>
+            <textarea cols="15" rows="5" for="address" name="address" id="address"
+                placeholder="Enter Your Current Address"></textarea>
 
             <label for="post">Post Applied For</label>
             <input type="text" placeholder="Enter Your Prefered Post">
@@ -79,7 +84,7 @@
                 <option value="">7-10</option>
             </select>
 
-            <label for="hobbies">Hobbies: </label>
+            <label for="hobbies" id="hobbies">Hobbies: </label>
 
             <label for=""><input type="checkbox" name="hobbies" id="hobbies">Outdoor Games</label>
             <label for=""><input type="checkbox" name="hobbies" id="hobbies">Indoor Games</label>
