@@ -1,0 +1,223 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(48, 159, 159);
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+
+
+
+/* Heading Styling Start */
+.container{
+  display: block;
+  max-width: 1200px;
+  max-height: auto;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 3px solid #0077b6;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+.image img{
+  max-width: 250px;
+  max-height: 300px;
+  border-radius: 30px;
+}
+
+.text h1{
+  font-family: algerian, Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: underline dotted ;
+  font-size: 45px;
+}
+
+.text p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+
+/* Form Styling Start */
+fieldset{
+  border: 2px double rgb(139, 137, 137);
+  border-radius: 30px;
+  
+  
+}
+
+legend{
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0077b6;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.form{
+  
+  padding: 0px 25px;
+
+}
+
+
+.form label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  display: block;
+  font-size: 25px;
+  
+}
+
+
+/* Radio Button Styling Start*/
+
+.radio{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 15px;
+  
+}
+
+.radio label{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+
+}
+
+.radio input[type="radio"]{
+  appearance: none;
+  border: 2px solid rgb(167, 177, 59);
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.radio input[type="radio"]:checked{
+  background-color: #4CAF50;
+}
+
+.radio input[type="radio"]:hover{
+ border-color: rgb(187, 228, 37);
+}
+
+/* Radio Button Styling End*/
+
+
+
+.inputtext input{
+  width: 50%;
+  display: block;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0)
+}
+
+.inputtext textarea{
+  width: 50%;
+  resize: none;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 15px;
+  margin: 5px;
+}
+
+
+/* Dropdown List Styling  */
+.dropdown select{
+  width: 50%;
+  display: block;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0)
+}
+
+
+
+/* Checkbox Styling Start */
+
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 15px;
+  
+}
+.checkbox label{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.checkbox input[type="checkbox"]{
+  appearance: none;
+  border: 2px solid #1b95c1;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.checkbox input[type="checkbox"]:checked{
+  background-color: #0077b6;
+
+}
+
+.checkbox input[type="checkbox"]:hover{
+  border-color: #00bbff; 
+}
+
+/* Checkbox Styling End */
+
+
+/* button Styling Start */
+
+button{
+  margin-left: 120px;
+  background-color: #1b95c1;
+  margin-top: 15px;
+  padding:10px 25px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #179fd0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    border:2px dotted #217a9a;
+}
+
