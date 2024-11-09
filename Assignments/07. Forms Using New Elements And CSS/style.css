@@ -61,7 +61,7 @@ fieldset{
 
 legend{
   font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #0077b6;
   text-align: center;
   font-weight: bold;
@@ -75,7 +75,7 @@ legend{
 
 
 .form label{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   color: #333;
   margin-top: 10px;
@@ -201,15 +201,17 @@ legend{
 button{
   margin-left: 120px;
   background-color: #1b95c1;
-  margin-top: 15px;
+  margin: 15px 0 15px 120px;
   padding:10px 25px;
   border-radius: 15px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  transition: 0.4s;
 
 }
 
@@ -229,6 +231,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+/* input[type=number] {
   -moz-appearance: textfield;
-}
+} */
