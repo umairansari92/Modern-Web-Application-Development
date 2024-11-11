@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container .header {
+  margin: 0px auto 15px auto;
+  padding: 0 35px;
+  border: 1px dashed red;
+  /* border-radius: 20px; */
+  width: 75%;
+}
+
+.container .header .img {
+  width: 30%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.container .header .middle-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.container .header .middle-header .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container .header .middle-header .social img {
+  width: 50px;
+  height: 50px;
+}
+
+.container .header .middle-header .student {
+  border: 1px dotted blue;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+.container .header .middle-header .student img {
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  color: #448cc3;
+}
+
+.container .header .middle-header .student a {
+  text-decoration: none;
+  color: #448cc3;
+}
+
+.header .heading-last h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: -20px auto 20px auto;
+}
+
+.tabs button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #2093eb;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button a{
+    text-decoration: none;
+}
+
+.tabs button:hover {
+  background-color: #e0e0e0;
+}
+
+.tabs button :active{
+    color: red;
+}
+
+
+/* Main Form CSS Start */
+.main-form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.main-form label,
+span {
+  color: #3f92d1;
+}
+.dropbox1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.dropbox1 label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.textbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  width: 100%;
+}
+.dropbox1 select,
+.textbox input[type="text"],
+.textbox input[type="email"],
+.textbox input[type="number"],
+.textbox input[type="date"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+label {
+  width: 40%;
+}
+
+.dropbox2 select {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+}
+
+.textbox2 input[type="text"] {
+  width: 100%;
+  display: block;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.image {
+  width: 10%;
+  border: 1px solid #3f92d1;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 45px 0px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#image {
+  display: none;
+}
+
+.footer ul {
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0 25px;
+}
+
+.ins {
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+}
+
+.ins ol li{
+    margin-bottom: 10px;
+}
+
+.submit button {
+    width: 100%;
+    background-color: #0d6db7;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.idcard{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.idcard label{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #116eb3;
+}
+
+.idcard input[type="text"]{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border:1px solid #dbedc3;
+}
+
+.idcard button{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #2093eb;
+    font-weight: bold;
+}
+
+
+.rollnumber{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.rollnumber label{
+    color: #116eb3;
+    margin-bottom: 10px;
+}
+
+.rollnumber input[type="number"]{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border:1px solid #dbedc3;
+}
+
+.rollnumber button{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #2093eb;
+    font-weight: bold;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
