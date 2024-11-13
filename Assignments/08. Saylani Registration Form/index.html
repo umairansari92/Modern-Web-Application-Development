@@ -44,12 +44,13 @@
             <div class="heading-last">
                 <h3>Services - Eaducation - Registration</h3>
             </div>
+            <div class="tabs">
+                <button><a href="">Registration</a></button>
+                <button><a href="idcard.html">Download ID Card</a></button>
+                <button>Results</button>
+            </div>
         </div>
-        <div class="tabs">
-            <button><a href="">Registration</a></button>
-            <button><a href="idcard.html">Download ID Card</a></button>
-            <button>Results</button>
-        </div>
+        
 
         <!-- End Form Header -->
 
@@ -130,15 +131,16 @@
                         <label for="date">Date Of Birth</label>
                         <input type="date" name="date" id="date" required>
                     </div>
+                    <div class="dropbox2">
+                        <label for="gender">Select Gender</label>
+                        <select name="gender" id="gender" required>
+                            <option value="" disabled selected>Select Your Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="dropbox2">
-                    <label for="gender">Select Gender</label>
-                    <select name="gender" id="gender" required>
-                        <option value="" disabled selected>Select Your Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                </div>
+                
                 <div class="textbox2">
                     <div class="address">
                         <label for="address">Address</label>
