@@ -10,25 +10,27 @@ body {
 
 /* Navbar Styling Start */
 .navbar {
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 44px;
+  /* height: 44px; */
+  margin: 0 !important;
   background-color: rgba(22, 22, 23, 0.8);
   width: 100%;
+  overflow: hidden;
 }
 
 .navbar .nav {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 20px;
   color: #ffffff;
+  margin: 0;
 }
 .navbar .nav ul {
   display: flex;
+  justify-content: center;
   gap: 30px;
   margin-left: 50px;
 }
@@ -58,7 +60,7 @@ body {
 }
 
 .hero1 .heading .headline {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   color: #f5f5f7;
   text-align: center;
   text-align: center;
@@ -71,7 +73,7 @@ body {
   color: #ffffff;
   text-align: center;
   font-size: 30px;
-  margin: 10px auto;
+  /* margin: 10px auto; */
 }
 
 .hero1 .btn .learn {
@@ -255,8 +257,8 @@ body {
   letter-spacing: 0;
   font-weight: 500 !important;
   position: relative;
-  top: 55%;
-  left: 21%;
+  top: 59%;
+  left: -30%;
 }
 .gallery-1 .card-1 img {
   margin-top: 20px;
@@ -654,16 +656,16 @@ body {
   height: 200px;
   margin-bottom: 20px;
 }
-
-.bottom-list {
-  background-color: #f5f5f7;
-  width: 90%;
-  margin: 20px auto;
-  
+footer {
+  background-color: rgb(245, 245, 247);
+  width: 100%;
+  margin: 30px auto; 
+padding: 20px auto;
 }
 
-.bottom-list .text ul li{
-	margin: 10px auto;
+
+.bottom-list .text ul li {
+  margin: 10px auto;
 }
 .bottom-list .text {
   width: 50%;
@@ -671,17 +673,57 @@ body {
   padding: 10px auto;
 }
 
+.bottom-list .text .bottom-para hr {
+  border: 1px solid rgb(209, 189, 189);
+  border-radius: 50px;
+  width: 100%;
+}
 
-.bottom-nav{
+.bottom-nav {
   display: flex;
   justify-content: space-around;
-  max-width: 80%;
-  align-items: center;
-  
+  max-width: 60%;
+  margin: 0 auto 0px auto;
 }
 
-.bottom-nav .shop ul {
-
-  margin-bottom: 50px;
+.bottom-nav h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.bottom-nav ul li {
+  list-style: none;
+  font-size: 1em;
+  display: block;
+  pointer-events: auto;
+  margin-bottom: 0.8em;
+}
+
+/* .footer-para{
+  max-width: 60%; 
+} */
+footer .footer-para p{
+  font-size: 12px;
+text-align: center;
+margin-top: 20px;
+}
+
+footer .footer-para hr{
+  border: 1px solid rgb(209, 189, 189);
+  border-radius: 50px;
+  width: 60%;
+  margin: 10px auto;
+
+}
+
+footer .footer-para-2 p{
+  text-align: center;
+}
+
+footer .footer-para-2 span{
+  margin-right: 50px;
+}
