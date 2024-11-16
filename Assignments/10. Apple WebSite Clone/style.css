@@ -1,0 +1,687 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Navbar Styling Start */
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 44px;
+  background-color: rgba(22, 22, 23, 0.8);
+  width: 100%;
+}
+
+.navbar .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #ffffff;
+}
+.navbar .nav ul {
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+}
+.navbar .nav ul li {
+  list-style: none;
+}
+
+.navbar .logo img,
+.search img,
+.bag img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hero-1 Section Styling Start */
+.hero1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 580px;
+  margin-right: 505x;
+  background-size: 3008px 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./images/hero_iphone16pro_avail__fnf0f9x70jiy_large_2x.jpg);
+}
+
+.hero1 .heading .headline {
+  margin-top: 50px;
+  color: #f5f5f7;
+  text-align: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 55px;
+}
+
+.hero1 .heading .subhead {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.hero1 .btn .learn {
+  background-color: #2997ff;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #f5f5f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+}
+
+.hero1 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+
+  font-weight: 400;
+  color: #f5f5f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #2997ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero1 .btn .buy:hover {
+  background-color: #2997ff;
+}
+
+/* Hero-2 Section Styling Start */
+.hero2 {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 580px;
+  margin-right: 505x;
+  background-size: 3008px 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./images/hero_iphone16_avail__euwzls69btea_large_2x.jpg);
+}
+
+.hero2 .heading .headline {
+  margin-top: 50px;
+  color: #f5f5f7;
+  text-align: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 55px;
+}
+
+.hero2 .heading .subhead {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.hero2 .btn .learn {
+  background-color: #f5f5f7;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #000000;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+}
+
+.hero2 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #f5f5f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #f5f5f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero2 .btn .buy:hover {
+  background-color: #f5f5f7;
+  color: #555555;
+}
+
+/* Hero-3 Section Styling Start */
+.hero3 {
+  margin-top: 15px;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 580px;
+  margin-right: 505x;
+  background-size: 3008px 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./images/hero_holiday_2024__bbs03706zple_large_2x.jpg);
+}
+
+.hero3 .heading .headline {
+  margin-top: 50px;
+  color: #000000;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 55px;
+}
+
+.hero3 .heading .subhead {
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.hero3 .btn .learn {
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+/* Gallery Section Styling Start */
+.gallery {
+  background-color: #ffffff;
+}
+
+/* Gallery-1 Section Styling Start */
+.gallery-1 {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Gallery-1 Card-1 Section Styling Start */
+.gallery-1 .card-1 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/promo_ipadair_ai__3fv1eitzqv6y_large_2x.jpg);
+  height: 580px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-1 .content-1 .subhead {
+  background: linear-gradient(94deg, #0090f7, #ba62fc, #f2416b, #f55600);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  letter-spacing: 0;
+  font-weight: 500 !important;
+  position: relative;
+  top: 55%;
+  left: 21%;
+}
+.gallery-1 .card-1 img {
+  margin-top: 20px;
+}
+.gallery-1 .card-1 .btn .learn {
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.gallery-1 .card-1 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #0090f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #0090f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-1 .card-1 .btn .buy:hover {
+  background-color: #0090f7;
+  color: #555555;
+}
+
+/* Gallery-1 Card-2 Section Styling Start */
+.gallery-1 .card-2 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-image: url(./images/promo_airpods_pro_2_avail__vkitqi3okwie_large_2x.jpg);
+  height: 580px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-1 .card-2 .content-2 h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 53px;
+}
+.gallery-1 .card-2 .content-2 p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 4px;
+  max-width: 450px;
+}
+
+.gallery-1 .card-2 .btn {
+  position: relative;
+  left: 23%;
+}
+
+.gallery-1 .card-2 .btn .learn {
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.gallery-1 .card-2 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #0090f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #0090f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-1 .card-2 .btn .buy:hover {
+  background-color: #0090f7;
+  color: #555555;
+}
+
+/* Gallery-2 Section Styling Start */
+.gallery-2 {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Gallery-2 Card-1 Section Styling Start */
+.gallery-2 .card-1 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/promo_apple_watch_series_10_avail_lte__c70y29goir42_large_2x.jpg);
+  height: 580px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-2 .card-1 p {
+  color: #161515;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 4px;
+  max-width: 450px;
+}
+
+.gallery-2 .card-1 img {
+  margin-top: 20px;
+}
+.gallery-2 .card-1 .btn .learn {
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.gallery-2 .card-1 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #0090f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #0090f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-2 .card-1 .btn .buy:hover {
+  background-color: #0090f7;
+  color: #555555;
+}
+
+/* Gallery-2 Card-2 Section Styling Start */
+.gallery-2 .card-2 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/promo_macbookpro_announce__gdf98j6tj2ie_large_2x.jpg);
+  height: 580px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-2 .card-2 .content-2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 53px;
+}
+.gallery-2 .card-2 p {
+  color: #e6dddd;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 4px;
+  max-width: 450px;
+}
+
+.gallery-2 .card-2 img {
+  margin-top: 20px;
+}
+.gallery-2 .card-2 .btn .learn {
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.gallery-2 .card-2 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #0090f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #0090f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-2 .card-2 .btn .buy:hover {
+  background-color: #0090f7;
+  color: #555555;
+}
+
+/* Gallery-3 Section Styling Start */
+
+.gallery-3 {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Gallery-3 Card-1 Section Styling Start */
+.gallery-3 .card-1 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/promo_iphone_tradein__bugw15ka691e_large_2x.jpg);
+  height: 580px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-3 .card-1 p {
+  color: #161515;
+  width: 88%;
+  text-align: center;
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 4px;
+  max-width: 430px;
+}
+
+.gallery-3 .card-1 img {
+  margin-top: 20px;
+}
+.gallery-3 .card-1 .btn .learn {
+  position: relative;
+  left: 20%;
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+/* Gallery-3 Card-2 Section Styling Start */
+.gallery-3 .card-2 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/promo_apple_card__5cm7draujpey_large_2x.jpg);
+  height: 580px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-3 .card-2 .content-2 {
+  color: #070707;
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 53px;
+}
+.gallery-3 .card-2 p {
+  color: #020202;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.19048;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 4px;
+  max-width: 450px;
+}
+
+.gallery-3 .card-2 img {
+  margin-top: 20px;
+}
+.gallery-3 .card-2 .btn .learn {
+  background-color: #6262d6;
+  margin: 11px 12px 0px 10px;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.gallery-3 .card-2 .btn .buy {
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  color: #0090f7;
+  border-radius: 25px;
+  padding: 11px 21px;
+  letter-spacing: -0.022em;
+  border: 1px solid #0090f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-3 .card-2 .btn .buy:hover {
+  background-color: #0090f7;
+  color: #ffffff;
+}
+
+.container {
+  margin-bottom: 250px;
+}
+
+/* image slider start */
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.slide .img img {
+  border: 6px soild #141313;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.bottom-list {
+  background-color: #f5f5f7;
+  width: 90%;
+  margin: 20px auto;
+  
+}
+
+.bottom-list .text ul li{
+	margin: 10px auto;
+}
+.bottom-list .text {
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px auto;
+}
+
+
+.bottom-nav{
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  align-items: center;
+  
+}
+
+.bottom-nav .shop ul {
+
+  margin-bottom: 50px;
+}
+

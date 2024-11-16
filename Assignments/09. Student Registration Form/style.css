@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    border: 2px solid rgb(0, 17, 255);
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 20px;
+    background-color: rgb(102, 87, 87);
+}
+
+.form .header .upper-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form .header .upper-header .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.form .header .mid-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form .header .mid-header h1{
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+
+}
+
+.form .header .mid-header .social-links img{
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+.form .header .mid-header .image-box{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 7% 15px;
+    
+}
+
+.form .header .mid-header label{
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+#image-box{
+    display: none;
+}
+.form .main-form{
+    width: 100%;
+}
+.form .main-form .input-text{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .main-form .input-text input{
+    width: 40%;
+    padding: 10px;
+    border: 2px solid rgb(111, 0, 255);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.form .main-form .input-text label{
+    font-size: 25px;
+    color: beige;
+}
+
+.form .main-form .select{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .main-form .select select{
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(111, 0, 255);
+}
+
+.form .main-form .select label{
+    font-size: 25px;
+    color: beige;
+}
+
+
+.form .main-form .input-text-2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .main-form .input-text-2 label{
+    font-size: 25px;
+    color: beige;
+}
+
+.form .main-form .input-text-2 input{
+    display: block;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(111, 0, 255);
+}
+
+.form .main-form button{
+    width: 40%;
+    padding: 20px;
+    background-color: blue;
+    color: aqua;
+    border-radius: 20px;
+    border: none;
+    margin: 10px 30%;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.form .main-form button:hover{
+    font-weight: bold;
+    background-color: rgb(40, 40, 209);
+}
