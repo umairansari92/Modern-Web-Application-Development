@@ -107,7 +107,6 @@ This repository will be updated regularly with more advanced topics, assignments
 - Deployment strategies
 
 
-
 # Pseudo-elements and Pseudo-classes in CSS
 
 ## Pseudo-elements
@@ -121,141 +120,23 @@ p::first-letter {
     font-weight: bold;
     color: #FF5722;
 }
-::first-line
-The ::first-line pseudo-element applies styles to the first line of a block-level element. It is useful for creating different typography effects on the first line of a text.
-css
-Copy code
+###::first-line
+The ::first-line pseudo-element applies styles to the first line of a block-level element. It is useful for creating different typography effects on the first line of a text.  
 p::first-line {
     font-style: italic;
     color: #2196F3;
 }
-Pseudo-classes
-:link
+##Pseudo-classes
+###:link
 The :link pseudo-class is applied to unvisited links. It targets anchor (<a>) elements that have not been clicked by the user.
-css
-Copy code
 a:link {
     color: blue;
     text-decoration: none;
 }
-:visited
+###:visited
 The :visited pseudo-class is applied to visited links, targeting anchor (<a>) elements that have been clicked by the user.
 css
 Copy code
-a:visited {
-    color: purple;
-}
-:active
-The :active pseudo-class is used when an element (like a link or button) is actively being clicked or activated.
-css
-Copy code
-a:active {
-    color: red;
-}
-:focus
-The :focus pseudo-class applies when an element (usually a form field or a button) has focus. This typically happens when the user clicks or navigates to the element using the keyboard.
-css
-Copy code
-input:focus {
-    border-color: #4CAF50;
-    outline: none;
-}
-:hover
-The :hover pseudo-class is applied when the user hovers their mouse over an element like a link or button. It's commonly used to change the appearance of interactive elements.
-css
-Copy code
-a:hover {
-    color: #FF5722;
-    text-decoration: underline;
-}
-Example Code Using All Pseudo-elements and Pseudo-classes
-
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* ::first-letter */
-        p::first-letter {
-            font-size: 2em;
-            color: #FF5722;
-            font-weight: bold;
-        }
-
-        /* ::first-line */
-        p::first-line {
-            font-style: italic;
-            color: #2196F3;
-        }
-
-        /* :link */
-        a:link {
-            color: blue;
-            text-decoration: none;
-        }
-
-        /* :visited */
-        a:visited {
-            color: purple;
-        }
-
-        /* :active */
-        a:active {
-            color: red;
-        }
-
-        /* :focus */
-        input:focus {
-            border: 2px solid #4CAF50;
-            outline: none;
-        }
-
-        /* :hover */
-        a:hover {
-            color: #FF5722;
-            text-decoration: underline;
-        }
-
-        /* Button styling */
-        button {
-            padding: 10px;
-            border: none;
-            background-color: #2196F3;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #1E88E5;
-        }
-    </style>
-    <title>Pseudo-elements and Pseudo-classes</title>
-</head>
-<body>
-    <p>Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Architecto, recusandae dolor! <span>Curabitur</span> adipiscing.</p>
-
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-
-    <br><br>
-
-    <input type="text" placeholder="Focus on me" />
-
-    <br><br>
-
-    <button>Click Me</button>
-</body>
-</html>
-Key Points:
-::first-letter targets the first letter of a block element (like a paragraph) for decorative effects.
-::first-line targets the first line of text within a block-level element for emphasis or styling.
-:link, :visited, :active, and :hover are pseudo-classes used to style links (<a>) in various states (normal, visited, active, hover).
-:focus is used to highlight elements, typically form fields or buttons, when they are focused by the user.  
-
 
 
   # Chapter 13: Boxes
