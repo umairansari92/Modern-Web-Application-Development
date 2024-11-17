@@ -169,7 +169,7 @@ a:hover {
     text-decoration: underline;
 }
 Example Code Using All Pseudo-elements and Pseudo-classes
-html
+
 Copy code
 <!DOCTYPE html>
 <html lang="en">
@@ -255,6 +255,9 @@ Key Points:
 ::first-line targets the first line of text within a block-level element for emphasis or styling.
 :link, :visited, :active, and :hover are pseudo-classes used to style links (<a>) in various states (normal, visited, active, hover).
 :focus is used to highlight elements, typically form fields or buttons, when they are focused by the user.  
+
+
+
   # Chapter 13: Boxes
 
 ### 1. **Controlling the Size of Boxes**
