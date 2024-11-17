@@ -86,7 +86,25 @@ I am following **Jon Duckett's HTML & CSS** as a primary reference for Module 1 
   - **Relative URLs**: URLs that navigate within the current site.
 - Using `mailto` links to create email actions.
 - Introduction to adding images to web pages and choosing the right formats for the web.
+#### Example:
+- To open a link in a new tab:
+  ```html
+  <a href="https://example.com" target="_blank">Visit Example</a>
+- To create a mail link:
+ ```html
+  <a href="mailto:someone@example.com">Email Us</a>
 
+## How to Use
+1. Clone this repository:
+git clone https://github.com/umairansari92/Modern-Web-Application-Development.git
+2. Explore class folders for specific lessons and code examples.
+
+## Future Updates
+This repository will be updated regularly with more advanced topics, assignments, and projects as the course progresses. Stay tuned for:
+- Full-stack development projects
+- API integration
+- Secure payment gateway implementation
+- Deployment strategies
 
 
 
