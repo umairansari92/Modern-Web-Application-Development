@@ -114,12 +114,13 @@ This repository will be updated regularly with more advanced topics, assignments
 ### ::first-letter`
 - The `::first-letter` pseudo-element targets the **first letter** of a block-level element such as a paragraph. It is commonly used to create decorative effects like a drop cap.
 
-
+''' css
 p::first-letter {
     font-size: 2em;
     font-weight: bold;
     color: #FF5722;
 }
+'''
 ### ::first-line
 The ::first-line pseudo-element applies styles to the first line of a block-level element. It is useful for creating different typography effects on the first line of a text.  
 p::first-line {
