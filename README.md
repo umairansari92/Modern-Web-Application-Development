@@ -106,7 +106,41 @@ This repository will be updated regularly with more advanced topics, assignments
 - Secure payment gateway implementation
 - Deployment strategies
 
+# Chapter 10: INTRODUCING CSS
 
+## What is CSS?
+CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML or XML. It defines how HTML elements should be displayed on screen, paper, or in other media.
+
+## Uses of CSS
+- **Layout Control:** CSS helps in organizing content layout, positioning, and responsiveness.
+- **Styling:** It controls the fonts, colors, sizes, margins, and other visual properties of web elements.
+- **Consistency:** CSS allows for consistent styling across different pages of a website, improving maintainability.
+- **Separation of Content and Style:** It separates the structure (HTML) and styling (CSS), which makes the content easier to manage and update.
+
+## How CSS Rules Cascade?
+CSS rules cascade based on a hierarchy of importance. The final rule applied depends on:
+1. **Inline Styles:** Applied directly within the HTML tag (highest priority).
+2. **Internal Styles:** Defined within a `<style>` tag in the head section of HTML.
+3. **External Styles:** Defined in an external CSS file (lowest priority, unless overridden).
+
+If multiple rules apply to an element, the browser determines which rule takes precedence based on the order in the CSS file or specificity of selectors.
+
+## Importance of CSS
+- **Design Flexibility:** It enables web designers to create visually appealing, responsive designs.
+- **User Experience:** Helps improve readability, accessibility, and ease of navigation.
+- **Performance:** CSS can reduce load times by separating styling from HTML structure.
+
+## Key Points of CSS
+- **Selectors:** These target HTML elements to apply styles.
+- **Properties:** These define the styles to be applied (e.g., `color`, `font-size`).
+- **Values:** Define the settings for properties (e.g., `red`, `16px`).
+
+## CSS Link
+In HTML, CSS is linked using the `<link>` element within the `<head>` section:
+```html
+<link rel="stylesheet" type="text/css" href="styles.css">
+# Declaration
+A CSS declaration consists of a property and a value, written in the following format:
 # Pseudo-elements and Pseudo-classes in CSS
 
 ## Pseudo-elements
