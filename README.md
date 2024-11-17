@@ -111,7 +111,7 @@ This repository will be updated regularly with more advanced topics, assignments
 
 ## Pseudo-elements
 
-### `::first-letter`
+### ::first-letter`
 - The `::first-letter` pseudo-element targets the **first letter** of a block-level element such as a paragraph. It is commonly used to create decorative effects like a drop cap.
 
 ```css
@@ -120,23 +120,22 @@ p::first-letter {
     font-weight: bold;
     color: #FF5722;
 }
-###::first-line
+### ::first-line
 The ::first-line pseudo-element applies styles to the first line of a block-level element. It is useful for creating different typography effects on the first line of a text.  
 p::first-line {
     font-style: italic;
     color: #2196F3;
 }
-##Pseudo-classes
-###:link
+## Pseudo-classes
+### :link
 The :link pseudo-class is applied to unvisited links. It targets anchor (<a>) elements that have not been clicked by the user.
 a:link {
     color: blue;
     text-decoration: none;
 }
-###:visited
+### :visited
 The :visited pseudo-class is applied to visited links, targeting anchor (<a>) elements that have been clicked by the user.
-css
-Copy code
+
 
 
   # Chapter 13: Boxes
