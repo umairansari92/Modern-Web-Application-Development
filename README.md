@@ -111,8 +111,6 @@ This repository will be updated regularly with more advanced topics, assignments
 
 
 
-
-
 # Chapter 14: Lists, Tables, and Forms
 
 ### 1. Difference Between Child Selector and Descendant Selectors
