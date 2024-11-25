@@ -19,6 +19,7 @@ body {
   background-color: rgba(22, 22, 23, 0.8);
   width: 100%;
   overflow: hidden;
+  
 }
 
 .navbar .nav {
@@ -27,6 +28,7 @@ body {
   gap: 20px;
   color: #ffffff;
   margin: 0;
+  margin-top: 7px;
 }
 .navbar .nav ul {
   display: flex;
@@ -36,6 +38,7 @@ body {
 }
 .navbar .nav ul li {
   list-style: none;
+  color: #ffffff;
 }
 
 .navbar .logo img,
@@ -43,6 +46,11 @@ body {
 .bag img {
   width: 20px;
   height: 20px;
+
+}
+
+.navbar .nav ul li a{
+  text-decoration: none;
 }
 
 /* Hero-1 Section Styling Start */

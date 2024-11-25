@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+    <fieldset>
+        <legend>User Information</legend>
+        <label for="name" >Full Name</label>
+        <br>
+        <input type="text" minlength="5" maxlength="15" id="name" placeholder="Enter Your Name" required />
+        <br />
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" minlength="5" maxlength="15"  placeholder="Enter Your Email" required>
+        <br />
+        <label for="">Pasword</label>
+        <br>
+        <input type="password" minlength="10" maxlength="35" placeholder="Enter Password" required>
+        <br>
+        <label for="">Country</label>
+        <br>
+        <select name="" id="">
+            <option value="" disabled selected>Select Country</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="india">India</option>
+            <option value="China">China</option>
+            <option value="Turkey">Turkey</option>
+        </select>
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <label for="Male">Male
+            <input type="radio" name="gender" id="Male" checked>
+        </label>
+        <label for="Female">Female
+            <input type="radio" name="gender" id="Female">
+        </label>
+        <label for="Other">Other
+            <input type="radio" name="gender" id="Other">
+        </label>
+        <br>
+        <label for="">Hobbies</label>
+        <br>
+        <label for="">Football
+            <input type="checkbox" name="Hobbies">
+        </label>
+
+        <label for="">Cricket</label>
+
+        <input type="checkbox" name="Hobbies" id="" checked>
+        <label for="">Watching Movies</label>
+        <input type="checkbox" name="Hobbbies" id="">
+        <br><br>
+        <label for="">upload your cv</label>
+        <input type="file">
+        <br>
+        <label for="">Comments</label><br>
+        <textarea cols="40" rows="30"></textarea>
+        <br><br>
+        <button>Form Submit</button>
+    </fieldset>
+</form>
+</body>
+
+</html>
