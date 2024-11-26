@@ -461,7 +461,7 @@ body {
 /* SERVICE COUNTER START */
 .services-counter {
   border: 1px solid blue;
-  background-color: #0D6DB7;
+  background-color: #0d6db7;
   background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
   background-position: 50% 0;
   width: 90%;
@@ -487,98 +487,304 @@ body {
     width: 100%;
 } */
 
-
-.services-counter .img{
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 50%;
-    margin: 10px auto;
-
+.services-counter .img {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 10px auto;
 }
 
 .services-counter h2 {
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
 }
 
 .services-counter p {
-    text-align: center;
-    color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
-
-
 
 /* SERVICE COUNTER END */
 
-.testimonials .header{
-    margin: 20px 0;
+.testimonials .header {
+  margin: 20px 0;
 }
-.testimonials .header h5{
-    text-align: center;
-    color: red;
+.testimonials .header h5 {
+  text-align: center;
+  color: red;
 }
-.testimonials .header h1{
-    text-align: center;
+.testimonials .header h1 {
+  text-align: center;
 }
 
-.testimonials .bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#EEEEEE;
-    width: 80%;
-    margin: 0 auto;
+.testimonials .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  width: 80%;
+  margin: 0 auto;
 }
 .testimonials .bottom {
-    padding: 50px;
-    margin-top: 50px;
-    line-height: 21px;
+  padding: 50px;
+  margin-top: 50px;
+  line-height: 21px;
 }
-.testimonials .bottom  h1{
-    text-align: center;
-    font-weight:600;
-    font-size: 22px;
-    color: #0D6DB7;
-    line-height: 41px;
-}
-
-.testimonials .bottom  h5{
-    text-align: center;
-}
-.testimonials .bottom  p{
-    text-align: center;
-    padding: 0 8rem;
-    line-height: 30px;
+.testimonials .bottom h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  color: #0d6db7;
+  line-height: 41px;
 }
 
-.testimonials .bottom img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.testimonials .bottom h5 {
+  text-align: center;
+}
+.testimonials .bottom p {
+  text-align: center;
+  padding: 0 8rem;
+  line-height: 30px;
+}
+
+.testimonials .bottom img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 /* .testimonials .bottom .box button{
 
 } */
 
-
-
-
-.media{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 90%;
-    margin: 0 auto;
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.media .h1 h1{
-    text-align: center;
+.media .h1 h1 {
+  text-align: center;
 }
 
-.media .videos{
-    display: flex;
-    gap: 20px;    
+.media .videos {
+  display: flex;
+  gap: 20px;
 }
 
+/* NEWS SECTION STYLING START */
+
+.news-container h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  margin: 45px;
+}
+.news {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.news .card-1 {
+  gap: 10px;
+  flex: 1;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 384px;
+  width: 383px !important;
+}
+
+.news .card-1 img {
+  width: 100%;
+  height: 200px;
+}
+
+.news .card-1 h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.news .card-1 .arrow {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+}
+
+.news .card-1 .date {
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #8dc63f;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.news .card-2 {
+  gap: 10px;
+  flex: 1;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 370px;
+}
+
+.news .card-2 img {
+  width: 100%;
+  height: 200px;
+}
+
+.news .card-2 h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.news .card-2 .arrow {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+}
+
+.news .card-2 .date {
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #8dc63f;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.news .card-3 {
+  gap: 10px;
+  flex: 1;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 370px;
+}
+
+.news .card-3 img {
+  width: 100%;
+  height: 200px;
+}
+
+.news .card-3 h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.news .card-3 .arrow {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+}
+
+.news .card-3 .date {
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #8dc63f;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.news .card-4 {
+  gap: 10px;
+  flex: 1;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 370px;
+}
+
+.news .card-4 img {
+  width: 100%;
+  height: 200px;
+}
+
+.news .card-4 h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.news .card-4 .arrow {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+}
+
+.news .card-4 .date {
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #8dc63f;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.saylani-guide {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+  background-color: #0d6db7;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.saylani-guide input {
+  background-color: transparent;
+  border-color: #fff !important;
+  color: #fff !important;
+  max-width: 70%;
+  margin: 20px 180px;
+  border-radius: 5px;
+
+  padding: 15px !important;
+}
+
+.saylani-guide button {
+  background-color: white;
+  border-color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  max-width: 70%;
+  margin: 20px 180px;
+  border-radius: 5px;
+  padding: 15px !important;
+}
