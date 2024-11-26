@@ -625,14 +625,15 @@ Bootstrap is a popular front-end framework used to build responsive and mobile-f
 
 ---
 
-# Comparison with Other Front-End Frameworks
+## Comparisons with Other Front-End Frameworks
+Compared Bootstrap with other popular frameworks in terms of ease of use, customization, and community support:
 
-| **Feature**          | **Bootstrap**     | **Foundation**        | **Bulma**           |
-|-----------------------|-------------------|-----------------------|---------------------|
-| Ease of Use          | Beginner-friendly | More complex          | Beginner-friendly   |
-| Community Support    | Large             | Smaller               | Medium              |
-| File Size            | Larger            | Medium                | Small               |
-| Customization        | High              | Very High             | Moderate            |
+| Feature         | Bootstrap       | Foundation      | Bulma           | Tailwind CSS     | Semantic UI     | Materialize     | UIKit           |
+|-----------------|-----------------|-----------------|-----------------|------------------|-----------------|-----------------|-----------------|
+| **Ease of Use** | Beginner-friendly | More complex    | Beginner-friendly | Requires more setup | Easy to use     | Beginner-friendly | Easy to use     |
+| **Community Support** | Large        | Smaller         | Medium           | Growing           | Medium          | Medium          | Medium          |
+| **File Size**   | Larger           | Medium           | Small            | Small             | Medium          | Medium          | Small           |
+| **Customization** | High          | Very High        | Moderate         | Very High         | High            | Moderate        | High            |
 
 ---
 
