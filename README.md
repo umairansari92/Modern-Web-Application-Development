@@ -688,4 +688,24 @@ Compared Bootstrap with other popular frameworks in terms of ease of use, custom
 
 ---
 
+# Class Summary - Bootstrap Introduction
+
+## Key Topics
+- **What is Bootstrap?**: A front-end framework for responsive design and reusable components.
+- **Advantages**: Responsive, cross-browser compatible, pre-built components, customizable, and has strong community support.
+- **Disadvantages**: Large file size, generic design without customization, learning curve for beginners.
+
+## Comparisons
+- Compared Bootstrap with other frameworks like Foundation and Bulma in terms of ease of use, customization, and community support.
+
+## Static vs. Dynamic Web Applications
+- **Static Web Apps**: Fixed content, fast, secure, but lacks interactivity.
+- **Dynamic Web Apps**: Real-time content, interactive, scalable, but resource-intensive and complex to develop.
+
+## Practical Work
+- Experimented with Bootstrap buttons (styles, sizes) and created a responsive navbar.
+
+### Key Takeaway
+Bootstrap is a powerful tool for efficient and responsive front-end design, with its choice dependent on project requirements and complexity.
+
 
