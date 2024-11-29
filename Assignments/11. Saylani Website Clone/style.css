@@ -914,6 +914,7 @@ footer {
   background-size: cover;
   background-color: #424242;
   color: white;
+  max-width: 100%;
 }
 
 footer::before {
@@ -946,8 +947,8 @@ footer .main li {
 }
 
 footer .mid {
-  width: 90%;
-  margin: 10px 45%;
+  width: 9%;
+  margin: 10px auto;
 }
 
 footer .mid img{
