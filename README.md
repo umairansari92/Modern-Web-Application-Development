@@ -15,38 +15,10 @@ This repository contains my progress and work through the **Modern Web Applicati
     - [Class 4](#class-4)
     - [Class 5](#class-5)
       - [Example:](#example)
-  - [How to Use](#how-to-use)
-  - [Future Updates](#future-updates)
-- [Chapter 13: Boxes](#chapter-13-boxes)
-    - [1. **Controlling the Size of Boxes**](#1-controlling-the-size-of-boxes)
-    - [2. **Box Model for Borders, Margin, and Padding**](#2-box-model-for-borders-margin-and-padding)
-    - [3. **Displaying and Hiding Boxes**](#3-displaying-and-hiding-boxes)
-    - [4. **What Are Layouts and How Many Layouts Are Mostly Used?**](#4-what-are-layouts-and-how-many-layouts-are-mostly-used)
-    - [5. **What is Flexbox? Its Working and Importance, and All Properties and Their Behavior**](#5-what-is-flexbox-its-working-and-importance-and-all-properties-and-their-behavior)
-    - [6. **What is Grid? Its Working and Importance**](#6-what-is-grid-its-working-and-importance)
-    - [Summary of Chapter 13](#summary-of-chapter-13)
-- [Chapter 14: Lists, Tables, and Forms](#chapter-14-lists-tables-and-forms)
-    - [1. Difference Between Child Selector and Descendant Selectors](#1-difference-between-child-selector-and-descendant-selectors)
-    - [2. List Style Position](#2-list-style-position)
-    - [3. List Style Type](#3-list-style-type)
-    - [4. **Table and Its Properties**](#4-table-and-its-properties)
-    - [5. **Behavior When the Same Property Is Assigned to Parent, Child, and Grandchild**](#5-behavior-when-the-same-property-is-assigned-to-parent-child-and-grandchild)
-    - [6. **Differentiate Between Table and Data Table**](#6-differentiate-between-table-and-data-table)
-    - [7. **Empty Cell Hide**](#7-empty-cell-hide)
-    - [8. **Border Spacing**](#8-border-spacing)
-    - [9. **Border Collapse**](#9-border-collapse)
-    - [10. **Thead, Tbody, and Tfoot Elements and Their CSS**](#10-thead-tbody-and-tfoot-elements-and-their-css)
-    - [**Summary of Today's Class**](#summary-of-todays-class)
-- [Class 20: Starting Bootstrap](#class-20-starting-bootstrap)
-  - [Introduction to Bootstrap](#introduction-to-bootstrap)
-  - [Uses of Bootstrap](#uses-of-bootstrap)
-  - [Examples of Bootstrap](#examples-of-bootstrap)
-    - [Responsive Grid Example](#responsive-grid-example)
     - [Button Example](#button-example)
-    - [Navbar Example](#navbar-example)
 - [Advantages of Bootstrap](#advantages-of-bootstrap)
 - [Disadvantages of Bootstrap](#disadvantages-of-bootstrap)
-- [Comparison with Other Front-End Frameworks](#comparison-with-other-front-end-frameworks)
+  - [Comparisons with Other Front-End Frameworks](#comparisons-with-other-front-end-frameworks)
 - [Static vs. Dynamic Web Applications](#static-vs-dynamic-web-applications)
   - [What is a Static Web Application?](#what-is-a-static-web-application)
     - [Key Points](#key-points)
@@ -57,7 +29,24 @@ This repository contains my progress and work through the **Modern Web Applicati
       - [Advantages:](#advantages-1)
       - [Disadvantages:](#disadvantages-1)
 - [Differences Between Static and Dynamic Web Applications](#differences-between-static-and-dynamic-web-applications)
-- [Additional Notes](#additional-notes)
+- [Class Summary - Bootstrap Introduction](#class-summary---bootstrap-introduction)
+  - [Key Topics](#key-topics)
+  - [Comparisons](#comparisons)
+  - [Static vs. Dynamic Web Applications](#static-vs-dynamic-web-applications-1)
+  - [Practical Work](#practical-work)
+    - [Key Takeaway](#key-takeaway)
+  - [Overview of Bootstrap Classes and Components](#overview-of-bootstrap-classes-and-components)
+  - [Container Classes: `.container` vs. `.container-fluid`](#container-classes-container-vs-container-fluid)
+    - [**.container**](#container)
+    - [**.container-fluid**](#container-fluid)
+  - [Utility Classes: `mx-auto` and `me-auto`](#utility-classes-mx-auto-and-me-auto)
+    - [**mx-auto**](#mx-auto)
+    - [**me-auto**](#me-auto)
+  - [Components in Bootstrap](#components-in-bootstrap)
+    - [**Dropdown Divider**](#dropdown-divider)
+    - [**Carousel with Text and Image**](#carousel-with-text-and-image)
+    - [**Cards**](#cards)
+  - [Conclusion](#conclusion)
 
 ## Course Overview
 This course is designed to teach complete web and web application development, using modern frameworks and tools. Topics covered include:
@@ -709,3 +698,95 @@ Compared Bootstrap with other popular frameworks in terms of ease of use, custom
 Bootstrap is a powerful tool for efficient and responsive front-end design, with its choice dependent on project requirements and complexity.
 
 
+## Overview of Bootstrap Classes and Components
+Bootstrap is a popular front-end framework that provides a collection of CSS classes and JavaScript components to facilitate responsive web design. Understanding its classes and components is essential for efficient web development. Below, we delve into various aspects of Bootstrap, including container classes, utility classes, components, and specific features like dropdown dividers and carousels.
+
+## Container Classes: `.container` vs. `.container-fluid`
+### **.container**
+The `.container` class creates a responsive fixed-width container that adapts its width based on the screen size. It maintains margins on the left and right, providing a centered layout. The maximum widths at various breakpoints are as follows:
+| Breakpoint         | Max Width  |
+|-------------------|------------|
+| Extra small (<576px) | 100%       |
+| Small (≥576px)      | 540px     |
+| Medium (≥768px)     | 720px     |
+| Large (≥992px)      | 960px     |
+| Extra Large (≥1200px)| 1140px    |
+| XXL (≥1400px)       | 1320px    |
+**Example:**
+<div class="container">
+    <h1>Welcome to My Site</h1>
+    <p>This is a fixed-width container.</p>
+</div>
+### **.container-fluid**
+The `.container-fluid` class creates a full-width container that spans the entire width of the viewport without any margins. This is ideal for layouts that require edge-to-edge content.
+**Example:**
+<div class="container-fluid">
+    <h1>Full Width Container</h1>
+    <p>This container takes up the full width of the screen.</p>
+</div>
+## Utility Classes: `mx-auto` and `me-auto`
+### **mx-auto**
+The `mx-auto` class is used to center block-level elements horizontally by setting the left and right margins to auto. This is particularly useful for centering fixed-width elements within a container.
+**Example:**
+<div class="container">
+    <div class="col-6 mx-auto">
+        <h2>Centered Content</h2>
+        <p>This content is centered using mx-auto.</p>
+    </div>
+</div>
+### **me-auto**
+The `me-auto` class applies a margin-right of auto, pushing elements to the left in flexbox layouts. This is part of Bootstrap's logical properties introduced in version 5.
+**Example:**
+<nav class="navbar">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+    </ul>
+</nav>
+## Components in Bootstrap
+Bootstrap provides numerous pre-styled components that enhance user interfaces. Here are some key components:
+### **Dropdown Divider**
+A dropdown divider can be used to separate items within a dropdown menu for better organization.
+**Example:**
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+    </ul>
+</div>
+### **Carousel with Text and Image**
+A carousel allows you to display multiple items in a sliding format. You can customize it to show text on one side and an image on the other.
+**Example:**
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-6">
+                    <h5>Slide Title</h5>
+                    <p>Description for slide one.</p>
+                </div>
+                <div class="col-6">
+                    <img src="image1.jpg" alt="First slide" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+        <!-- Additional slides here -->
+    </div>
+</div>
+### **Cards**
+Cards are flexible content containers that can include images, text, links, and more. They are commonly used for displaying information in a structured format.
+**Example:**
+<div class="card" style="width: 18rem;">
+    <img src="image.jpg" class="card-img-top" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">Some quick example text to build on the card title.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+## Conclusion
+Bootstrap's classes and components provide developers with powerful tools for creating responsive web applications quickly and efficiently. Understanding how to use containers, utility classes, and various components like dropdowns, carousels, and cards will enhance your ability to design modern web interfaces. By leveraging these features, you can ensure your web applications are both visually appealing and functional across different devices.
