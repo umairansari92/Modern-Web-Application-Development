@@ -12,6 +12,7 @@ body {
   margin: 0.5rem 1.5rem;
 }
 
+
 /* UPPER HEADER START */
 .upper-header {
   background-color: #eee;
@@ -71,11 +72,17 @@ body {
 }
 /* UPPER HEADER END */
 
+
+
+
+
 /* NAVBAR START */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
+  top: 0px;
 }
 
 .navbar .nav {
@@ -128,6 +135,12 @@ body {
   cursor: pointer;
 }
 /* NAVBAR END */
+
+
+
+
+
+
 
 /* HERO SECTION START */
 .hero {
@@ -193,6 +206,12 @@ body {
   margin-top: 5px;
 }
 /* HERO SECTION END */
+
+
+
+
+
+
 
 /* MIDDLE NAV SECTION START */
 
@@ -261,6 +280,11 @@ body {
 
 /* MIDDLE NAV SECTION END */
 
+
+
+
+
+
 /* CORESULE SLIDER SECTION START */
 
 .carousel-inner button {
@@ -278,6 +302,11 @@ body {
 }
 
 /* CORESULE SLIDER SECTION END */
+
+
+
+
+
 
 /* HOME SERVICES SECTION START */
 
@@ -331,62 +360,94 @@ body {
 
 /* HOME SERVICES SECTION END */
 
+
+
+
+
+
 /* FUNDING BOX STYLING START */
-.funding-box {
-  border: 1px solid red;
+.funding-box{
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-
-  gap: 10px;
+  align-items: center;
+  max-width: 80%;
+  margin: 50px auto;
+  gap: 20px;
 }
 
-.funding-box .box1,
-.box2,
-.box3 {
-  flex: 1;
-}
-
-.funding-box img {
-  border-radius: 10px;
+.funding-box img{
+  width: 488px;
   height: 300px;
-  object-fit: cover;
-  width: 100%;
+  opacity: 0.5;
+  border-radius: 15px;
+
 }
 
-.funding-box .h5 {
-  flex-direction: column;
-  /* background-color: rgba(0, 0, 0, .6); */
-  border-radius: 10px;
-  bottom: 0;
-  display: flex;
-  height: 100%;
-  justify-content: flex-end;
-  padding: 10px;
-  position: relative;
+.funding-box .box1 {
+  background-color: black;
+  height: 300px;
+  border-radius: 15px;
   width: 100%;
-  top: -150px;
-  /* z-index: 1; */
+}
+.funding-box .box2 {
+  background-color: black;
+  height: 300px;
+  border-radius: 15px;
+}
+.funding-box .box3 {
+  background-color: black;
+  height: 300px;
+  border-radius: 15px;
 }
 
-.funding-box h5 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 0.5em;
+.funding-box .box1 h5{
   position: relative;
-  top: 15px;
+  bottom: 250px;
+  left: 180px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+.funding-box .box2 h5{
+  position: relative;
+  bottom: 250px;
+  left: 80px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+.funding-box .box3 h5{
+  position: relative;
+  bottom: 250px;
+  left: 125px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.funding-box button{
+  position: relative;
+  border-radius: 25px;
+  bottom: 105px;
+  left: 25px;
+  width: 90%;
+  margin-top: 0 auto;
+  padding: 10px 0;
+  background-color: #8DC63F;
 }
 
 /* FUNDING BOX STYLING END */
 
+
+
+
+
+
+
+
 /* UPCOMING PROJECTS START */
 
 .upcoming-projects {
-  border: 1px solid red;
   display: flex;
   gap: 20px;
   width: 90%;
@@ -458,12 +519,16 @@ body {
 
 /* UPCOMING PROJECTS END */
 
+
+
+
+
+
 /* SERVICE COUNTER START */
 .services-counter {
+  position: relative;
   border: 1px solid blue;
   background-color: #0d6db7;
-  background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
-  background-position: 50% 0;
   width: 90%;
   display: flex;
   align-items: center;
@@ -472,20 +537,23 @@ body {
   padding: 15px 0;
 }
 
-/* .services_counter:before {
-    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: " ";
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: .2;
-    position: absolute;
-    top: 0;
-    width: 100%;
-} */
+.services_counter::before {
+  content: " ";
+  background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+  background-position: 50% 0;
+  display: block;
+  position: absolute;
+  background-position: 50% 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
 
 .services-counter .img {
   background-color: #fff;
@@ -505,6 +573,14 @@ body {
 }
 
 /* SERVICE COUNTER END */
+
+
+
+
+
+
+
+/* TESTIMONIALS STYLING START */
 
 .testimonials .header {
   margin: 20px 0;
@@ -558,6 +634,14 @@ body {
 
 } */
 
+
+/* TESTIMONIALS STYLING END */
+
+
+
+
+
+/* MEDIA UPDATE STYLING START */
 .media {
   display: flex;
   flex-direction: column;
@@ -574,6 +658,12 @@ body {
   display: flex;
   gap: 20px;
 }
+/* MEDIA UPDATE STYLING START */
+
+
+
+
+
 
 /* NEWS SECTION STYLING START */
 
@@ -752,18 +842,39 @@ body {
   margin-top: 10px;
 }
 
+/* NEWS SECTION STYLING END */
+
+
+
+
+/* SAYLANI SUBSCRIBE BOX STYLING START */
 .saylani-guide {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 80%;
-  background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
   background-color: #0d6db7;
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 50px auto;
   padding: 50px;
   text-align: center;
+}
+
+.saylani-guide::before {
+  content: " ";
+  background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+  display: block;
+  position: absolute;
+  background-position: 50% 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
 }
 
 .saylani-guide input {
@@ -788,3 +899,68 @@ body {
   border-radius: 5px;
   padding: 15px !important;
 }
+
+/* SAYLANI SUBSCRIBE BOX STYLING END */
+
+
+
+
+
+/* FOOTER STYLING START */
+footer {
+  position: relative;
+  border: 1px solid red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #424242;
+  color: white;
+}
+
+footer::before {
+  background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+footer .main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main .links .social-links img {
+  width: 25px;
+  height: 25px;
+}
+
+footer .main li {
+  list-style: none;
+}
+
+footer .mid {
+  width: 90%;
+  margin: 10px 45%;
+}
+
+footer .mid img{
+  width: 200px;
+  height: 123px;
+}
+
+footer .bottom {
+  text-align: center;
+}
+
+footer .copy-right {
+  text-align: center;
+}
+
+/* FOOTER STYLING END */
