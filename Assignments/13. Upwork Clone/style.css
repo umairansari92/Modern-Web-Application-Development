@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    --max-width-global-container:var(--max-width-global-container)
+  max-width: 1400px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(27, 27, 27);
+  background-color: #FFFFFF;
+}
+
+
+/* NAVIGATION BAR STYLING START */
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+
+
+
+/* TOP NAV STYLING START */
+  .navbar .top-nav {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .navbar .top-nav .logo{
+    margin: 0 50px;
+  }
+  .navbar .top-nav .logo img{
+    width: 82px;
+    height: 22.5px;
+  }
+
+  .navbar .top-nav .nav-manu ul{
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar .top-nav .nav-manu ul li{
+    list-style: none;
+  }
+
+
+  .navbar .top-nav .search img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 10px;
+  }
+/* TOP NAV STYLING END */
+
+
+
+
+/* TOP NAV STYLING START */
+.navbar .sec-nav ul{
+  display: flex;
+  gap: 20px;
+}
+.navbar .sec-nav ul li{
+  list-style: none;
+}
+/* TOP NAV STYLING END */
+
+
+/* NAVIGATION BAR STYLING END */
+
+
+
+
+
+
+/* MAIN WEB STYLING START */
+
+main .main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* HERO 2 STYLING START */
+  .hero-2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin: 50px auto;
+    gap: 20px;
+
+  }
+
+  .hero-2 .left {
+    min-width:  505px;
+    max-height: 370px;
+    background: #b4a5a5;
+  }
+  .hero-2 .left img {
+    max-width: 341px;
+    min-height: 240px;
+    margin: 15px 100px;
+
+  }
+
+ 
+  /* .hero-2 .right{
+    display: flex;
+    flex-direction: column;
+  } */
+  .hero-2 .right img{
+    width: 24px;
+    height: 24px;
+    display: inline;
+  }
+  .hero-2 .right h5{
+    display: inline;
+    margin-left: 10px;
+  }
+  .hero-2 .right p{
+    margin-left: 45px;
+  }
+/* HERO 2 STYLING END */
+
+
+
+
+
+
+/* MAIN WEB STYLING END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
