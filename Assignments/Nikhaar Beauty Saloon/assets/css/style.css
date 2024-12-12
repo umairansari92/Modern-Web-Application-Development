@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    --max-width-global-container:var(--max-width-global-container)
+  max-width: 1200px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #E63946 !important;
+  background-color: #FFFFFF;
+}
+
+
+ /* ================ NAVBAR SECTION STYLING START ================  */
+
+.navbar{
+    background-color: #ec8f97 !important;
+}
+
+
+.navbar .container-fluid .navbar-brand img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.navbar .nav-menu .nav-item{
+    margin: 0 auto;
+    display: inline;
+    padding: 2rem;
+}
+.navbar .nav-menu .nav-item a{
+    text-decoration: none;
+    background-color: #E63946;
+    color: #FFFFFF;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+}
+
+.navbar .nav-menu .nav-item a:hover{
+    background-color: #FFFFFF;
+    color: #E63946;
+    border: 2px solid #E63946;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+
+.navbar .container-fluid .contact-info {
+    color: #6b4c4c
+}
+
+ /* ================ NAVBAR SECTION STYLING END ================  */
+
+
+
+
+ /* ================ MAIN SECTION STYLING START ================  */
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ /* ================ TAGLINE SECTION SHOWCASE STYLING START ================  */
+.tagline-showcase h2{
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.tagline-showcase h2 span{
+    color: #FB9EC6;
+}
+
+.tagline-showcase p #element{
+    font-size: 40px;
+    font-family:  "Poppins", sans-serif;
+    font-weight: 600    ;
+}
+
+
+ /* ================ TAGLINE SECTION SHOWCASE STYLING END ================  */
+ 
+ 
+ 
+ /* ================ HERO SECTION STYLING START ================  */
+ 
+ .carousel-inner img{
+        width: 640px;
+        height: 640px;
+ }
+
+ .carousel-inner h1, p{
+    color: #ec8f97;
+ }
+
+
+
+ /* ================ HERO SECTION STYLING END ================  */
+
+
+
+
+ /* ================ SERVICE SECTION STYLING START ================  */
+ .service {
+     padding: 90px 0;
+     background: #fff;
+     background-color: #ec8f97;
+    }
+    
+
+
+.service .titlepage .heading {
+        font-size: 45px !important;
+        color: #ff0015;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline dashed;
+
+    }
+.service_box {
+    background: #fff;
+    text-align: center;
+    padding: 50px 20px 25px 20px;
+    border: #e9e9e9 solid 1px;
+    transition: ease-in all 0.5s;
+    margin-bottom: 30px;
+}
+
+.service_box h3 {
+    color: #070803;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 25px;
+    transition: ease-in all 0.5s;
+}
+
+.service_box p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #2e2e2e;
+    transition: ease-in all 0.5s;
+}
+
+.service_box i {
+    padding-bottom: 10px;
+    display: block;
+}
+
+
+#hover_chang:hover.service_box h3 {
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+#hover_chang:hover.service_box p {
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+
+/* ================ SERVICE SECTION STYLING END ================  */
+
+
+
+/* ================ ABOUT SECTION STYLING START ================  */
+.about {
+    margin: 50px auto;
+    background-color:#f03939;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .titlepage {
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.about .titlepage h2 {
+    text-decoration: underline;
+    color:white;
+}
+
+.about .titlepage p {
+    color:white;
+    margin: 10px auto;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px !important;
+}
+/* ================ ABOUT SECTION STYLING START ================  */
+
+
+
+
+/* ================ MAIN SECTION STYLING END ================  */

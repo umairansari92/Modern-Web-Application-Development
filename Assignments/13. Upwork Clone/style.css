@@ -88,8 +88,25 @@ main .main{
     max-width: 80%;
     margin: 0 auto;
 }
+/* MAIN WEB STYLING END */
 
 
+/* HERO 1 STYLING START */
+/* .hero-1{
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+
+} */
+.hero-1 .left .content h1 {
+      font-size: 72px;
+}
+
+.hero-1 .left .content button {
+    margin-bottom: 40px;
+}
+
+/* HERO 1 STYLING END */
 
 
 
@@ -97,46 +114,171 @@ main .main{
 /* HERO 2 STYLING START */
   .hero-2 {
     display: flex;
-    flex-direction: row;
-    max-width: 80%;
-    margin: 50px auto;
-    gap: 20px;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
 
   }
 
-  .hero-2 .left {
-    min-width:  505px;
-    max-height: 370px;
-    background: #b4a5a5;
-  }
-  .hero-2 .left img {
-    max-width: 341px;
-    min-height: 240px;
-    margin: 15px 100px;
-
+  .hero-2 .container{
+    background-color:#13544E;
+    border-radius: 10px;
+    margin: 0 auto;
   }
 
- 
-  /* .hero-2 .right{
-    display: flex;
-    flex-direction: column;
-  } */
-  .hero-2 .right img{
-    width: 24px;
-    height: 24px;
-    display: inline;
+  .hero-2 .container button{
+    margin-bottom: 20px;
   }
-  .hero-2 .right h5{
-    display: inline;
-    margin-left: 10px;
+
+  .hero-2 .left{
+    max-width: 100%;
+    padding: 35px 45px 35px 35px;
   }
-  .hero-2 .right p{
-    margin-left: 45px;
+
+
+  .hero-2 .left h4{
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: #FFFFFF;
   }
+
+
+  .hero-2 .left h1{
+    font-size: 56px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+.hero-2 .left h1 span{
+  color: #91E6B3;
+}
+
+
+.hero-2 .left p{
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+
+
+.hero-2 .left .list img{
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+
+.hero-2 .right{
+    width: 100%;
+  }
+.hero-2 .right img{
+  width: 598px;
+  height: 610px;
+}
+  
 /* HERO 2 STYLING END */
 
 
+/* TELENT SECTION STYLING START */
 
+ .telent .cards .card-1{
+
+  background-color: #F9F9F9 !important ;
+
+}
+
+/* TELENT SECTION STYLING START */
+
+
+/* HERO 3 STYLING START */
+.hero-3{
+  background-image: url(./images/bannre-2.jpg);
+  background-position: top;
+    background-size: cover;
+    /* letter-spacing: .6px; */
+    padding: 15px;
+    color: #FFFFFF;
+    max-width: 100%;
+    
+}
+
+.hero-3 .content h4{
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+
+.hero-3 .content h2{
+  font-size: 64px;
+}
+
+.hero-3 .content p{
+  font-size: 24px;
+  font-weight: 500;
+}
+.hero-3 .cards{
+  max-width: 90%;
+  margin: 10px auto;
+  column-gap: 35px;
+
+  
+  
+}
+.hero-3 .cards .card-1 {
+  background-color: #108A00;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.hero-3 .cards .card-1:hover{
+  color: #108A00;
+  background-color: #FFFFFF;
+}
+
+.hero-3 .cards .card-1 p{
+  display: inline;
+  margin-left: 5px;
+}
+.hero-3 .cards .card-2 {
+  background-color: #108A00;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2rem;
+}
+
+.hero-3 .cards .card-2:hover{
+  color: #108A00;
+  background-color: #FFFFFF;
+}
+
+.hero-3 .cards .card-2 p{
+  display: inline;
+  margin-left: 5px;
+}
+.hero-3 .cards .card-3 {
+  background-color: #108A00;
+  color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2rem;
+}
+
+.hero-3 .cards .card-3:hover{
+  color: #108A00;
+  background-color: #FFFFFF;
+}
+
+.hero-3 .cards .card-3 p{
+  display: inline;
+  margin-left: 5px;
+}
+/* HERO 3 STYLING END */
 
 
 
