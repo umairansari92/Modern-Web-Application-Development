@@ -22,9 +22,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Baloo+Bhaijaan+2:wght@400..800&family=Grechen+Fuemen&family=Katibeh&family=Kumar+One+Outline&family=Laila:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pirata+One&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stalinist+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- ================ AOS ANIMATION LIBRARY ================ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <!-- ================ FAVICON ================ -->
@@ -64,13 +66,13 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#pricing">Pricing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
+                                <a class="nav-link" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#footer">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -129,7 +131,7 @@
                     <img src="./assets/images/makeup-brushes-1761648_640.jpg" class="d-block w-100 border-radius-sm"
                         alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="heading-1">Welcome to Nikhaar</h1>
+                        <h1 class="heading-1 close">Welcome to Nikhaar</h1>
                         <p class="para">Step into a world of beauty where simplicity meets elegance. Our skilled team is
                             here to celebrate your unique radiance. Let's create moments of beauty together! 💖✨</p>
                     </div>
@@ -137,7 +139,7 @@
                 <div class="carousel-item">
                     <img src="./assets/images/bride-6171757_640.jpg" class="d-block w-100 border-radius-sm" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="heading-1">Welcome to Nikhaar</h1>
+                        <h1 class="heading-1 close ">Welcome to Nikhaar</h1>
                         <p class="para">Discover Complete Beauty at Nikhaar Beauty Parlor! From enchanting hair styling
                             to flawless nails and pampering foot treatments, our range of services is designed to
                             elevate your entire beauty experience. Immerse yourself in luxury, and let our skilled team
@@ -148,7 +150,7 @@
                 <div class="carousel-item">
                     <img src="./assets/images/woman-8670155_640.png" class="d-block w-100 border-radius-sm" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="heading-1">Welcome to Nikhaar</h1>
+                        <h1 class="heading-1 close">Welcome to Nikhaar</h1>
                         <p class="para">Experience the Art of Makeup at Nikhaar Beauty Parlor! Our skilled makeup
                             artists specialize in creating stunning looks tailored just for you. From everyday elegance
                             to glamorous evenings, let us enhance your beauty and bring your vision to life. Step into a
@@ -188,7 +190,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-right">
                         <div id="hover_chang" class="service_box justify-content-center text-center mt-5">
                             <i><img src="./assets/images/makeup.png" class="icon-big" alt="#" /></i>
                             <h3>Cosmetic</h3>
@@ -196,7 +198,7 @@
                                 believable. If you are </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up">
                         <div id="hover_chang" class="service_box justify-content-center text-center mt-5">
                             <i><img src="./assets/images/pedicure.png" class="icon-big" alt="#" /></i>
                             <h3>nails</h3>
@@ -204,7 +206,7 @@
                                 believable. If you are </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-left">
                         <div id="hover_chang" class="service_box justify-content-center text-center mt-5">
                             <i><img src="./assets/images/hairstyling.jpg" class="icon-big" alt="#" /></i>
                             <h3>hairdressing</h3>
@@ -213,7 +215,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <a class="read_more" href="services.html">Read More</a>
+                        <a class="read_more" href="./assets/Pages/services.html">Read More</a>
                     </div>
                 </div>
             </div>
@@ -242,15 +244,117 @@
                                 opportunity to embrace your natural allure and leave feeling pampered, confident, and
                                 beautifully you. Welcome to a place where beauty is not just a service; it's an art, and
                                 you are the masterpiece. </p>
-                            <a class="read_more mb-5" href="aboutus.html">Read More</a>
+                            <a class="read_more mb-5" href="./assets/Pages/aboutus.html">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!-- ================ PRICING SECTION CODING START ================ -->
 
+        <section class="pricing" id="pricing">
+            <div class="container text-center ">
+                <div class="header">
+                    <h1 class="heading-1">Our Exclusive Packages</h1>
+                    <h3 class="heading-3">Pamper yourself with the best <span>beauty services</span></h3>
+                </div>
+                <div class="row cards d-flex justify-content-center column-gap-5 text-start">
+                    <div class="pricing-card col-lg-3 col-md-4 p-5" data-aos="flip-left">
+                        <h3 class="heading-3">Basic Makeup</h3>
+                        <p class="text-center price">2000/=</p>
+                        <ul class="features">
+                            <li>Casual Makeup</li>
+                            <li>Casual Hair Style</li>
+                            <li>Casual Services</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card col-lg-3 col-md-4 p-5" data-aos="flip-right">
+                        <h3 class="heading-3">Party Makeup</h3>
+                        <p class="text-center price">10000/=</p>
+                        <ul class="features">
+                            <li>Party Makeup</li>
+                            <li>Exclusive Hair Style</li>
+                            <li>Exclusive Services
+                                <ol>
+                                    <li>"Manicure & Padicure</li>
+                                    <li>Full Body Vax</li>
+                                    <li>Upper Lips & EyeBrow Threading</li>
+                                    <li>And Much More"</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card col-lg-3 col-md-4 p-5" data-aos="flip-down">
+                        <h3 class="heading-3">Premium Hair Styling</h3>
+                        <p class="text-center price">30000/=</p>
+                        <ul class="features">
+                            <li>Haircut & Styling</li>
+                            <li>Hair Coloring</li>
+                            <li>Protein Treatment</li>
+                            <li>Xtenso Or Rebonding</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 mt-5">
+                        <a class="read_more" href="./assets/Pages/pricing.html">Read More</a>
+                    </div>
+                </div>
+            </div>
 
         </section>
+        <!-- ================ PRICING SECTION CODING END ================ -->
+        <!-- ================ GALLERY SECTION CODING START ================ -->
+        <section class="gallery" id="gallery">
+            <div class="container text-center">
+                <div class="header">
+                    <h1>Our Stunning Gallery</h1>
+                    <h3>Experience the elegance of <span>Nikhaar Beauty Parlour</span></h3>
+                </div>
+                <div class="row">
+                    <!-- Video 1 -->
+                    <div class="gallery-item col-lg-4 col-md-6 p-3">
+                        <div class="video-container">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/example1" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h5 class="item-title">Elegant Makeup Tutorial</h5>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="gallery-item col-lg-4 col-md-6 p-3">
+                        <div class="video-container">
+                            <video width="100%" height="200" controls>
+                                <source src="./assets/videos/hair-styling.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h5 class="item-title">Hair Styling Showcase</h5>
+                    </div>
+                    <!-- Image 1 -->
+                    <div class="gallery-item col-lg-4 col-md-6 p-3">
+                        <img src="./assets/images/gallery1.jpg" alt="Party Look" class="img-fluid rounded">
+                        <h5 class="item-title">Party Look Transformation</h5>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="gallery-item col-lg-4 col-md-6 p-3">
+                        <div class="video-container">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/example2" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h5 class="item-title">Bridal Makeup Timelapse</h5>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="gallery-item col-lg-4 col-md-6 p-3">
+                        <img src="./assets/images/gallery2.jpg" alt="Hair Coloring" class="img-fluid rounded">
+                        <h5 class="item-title">Hair Coloring Showcase</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- ================ GALLERY SECTION CODING END ================ -->
+
+
 
 
     </main>
@@ -260,12 +364,112 @@
 
 
     <!-- ================ FOOTER CODING START ================ -->
-    <footer>
+    <footer id="contact">
+        <div class="footer py-5 mt-5">
+            <div class="container">
+                <div class="row col-12">
+                    <div class="col-xl-6 col-md-12">
+                        <div class="row">
+                            <div class="col-md-7 padd_bottom">
+                                <div class="heading3">
+                                    <a href="#"><img src="./assets/images/NIKHAAR.gif"
+                                            class="justify-content-start" alt="#" /></a>
+                                    <p>Connect with us for exceptional service. Whether you have questions, feedback, or
+                                        need assistance, our team is here to help.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 padd_bottom padd_bott">
+                                <div class="contect">
+                                    <h3 class="">Contact Us</h3>
+                                    <p>Call: (+92) 307-2548318</p>
+                                    <p>Call: (+92) 319-7718769</p>
+                                    <p>E-Mail: info@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-1 padd_bottom">
+                                <div class="heading3">
+                                    <h3>INFORMATION</h3>
+                                    <p>Stay effortlessly informed with the latest updates.</p>
+                                    <p>Access valuable content tailored to your interests.</p>
+                                    <p>Explore beauty tips, trend alerts, and exclusive offers.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social">
+                                    <h3>MY ACCOUNT</h3>
 
+                                    <!-- FACEBOOK -->
+                                    <a href="https://www.facebook.com/sahira.malik.9022?mibextid=ZbWKwL"><svg
+                                            width="35px" height="35px" viewBox="-5 0 20 20" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <title>facebook [#fcfcfc]</title>
+                                                <desc>Created with Sketch.</desc>
+                                                <defs> </defs>
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd">
+                                                    <g id="Dribbble-Light-Preview"
+                                                        transform="translate(-385.000000, -7399.000000)" fill="#ffffff">
+                                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                            <path
+                                                                d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                                                                id="facebook-[#fcfcfc]"> </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></a>
+
+                                    <!-- INSTAGRAM -->
+                                    <a href="https://www.instagram.com/sahira5706/"><svg width="35px" height="35px"
+                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                                                    stroke="#ffffff"></path>
+                                                <circle cx="16.5" cy="7.5" r="1.5" fill="#ffffff"></circle>
+                                                <circle cx="12" cy="12" r="3.5" stroke="#ffffff"></circle>
+                                            </g>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>© 2019 All Rights Reserved. <a href="#"> Nikhaar Beauty Parlor</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
     <!-- ================ FOOTER CODING END ================ -->
 </body>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,8 +485,11 @@
         loop: true
     });
 </script>
-
-
+<!-- ================ AOS ANIMATION LIBRARY ================ -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- ================ BOOTSTRAP JS CDN ================ -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

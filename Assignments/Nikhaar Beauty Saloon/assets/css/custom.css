@@ -1,3 +1,20 @@
+/* =================== GOOGLE FONTS  =================== */
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+/* =================== SCROLL BAR STYLING =================== */
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
@@ -64,14 +81,14 @@
     font-family:  "Poppins", sans-serif;
 }
 
-a:hover{
+/* a:hover{
     background-color: #FFFFFF;
     color: #E63946;
     border: 2px solid #E63946;
     text-transform: uppercase;
     font-weight: 600;
     padding: 1rem 2rem;
-}
+} */
 
 #hover_chang:hover{
     background: #bc1939;
@@ -113,3 +130,29 @@ a:hover{
 .border-radius-sm{
     border-radius: 20px;
 }
+
+
+/* ==================== TEXT SHADOW COLSE ====================  */
+
+.close {
+    /* background-color: #fff;  */
+    color: #202c2d;
+    text-shadow:
+      0 1px #808d93,
+      -1px 0 #cdd2d5,
+      -1px 2px #808d93,
+      -2px 1px #cdd2d5,
+      -2px 3px #808d93,
+      -3px 2px #cdd2d5,
+      -3px 4px #808d93,
+      -4px 3px #cdd2d5,
+      -4px 5px #808d93,
+      -5px 4px #cdd2d5,
+      -5px 6px #808d93,
+      -6px 5px #cdd2d5,
+      -6px 7px #808d93,
+      -7px 6px #cdd2d5,
+      -7px 8px #808d93,
+      -8px 7px #cdd2d5;
+  }
+  

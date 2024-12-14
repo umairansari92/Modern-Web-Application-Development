@@ -24,3 +24,10 @@ nextButton.addEventListener("click", (e) => {
 
 // Initialize the first slide
 updateSlide();
+
+
+
+
+
+
+

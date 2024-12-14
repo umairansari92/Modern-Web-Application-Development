@@ -5,6 +5,10 @@
 }
 
 
+
+
+
+/* ================ BODY SECTION STYLING ================  */
 body {
     --max-width-global-container:var(--max-width-global-container)
   max-width: 1200px;
@@ -15,10 +19,16 @@ body {
   color: #E63946 !important;
   background-color: #FFFFFF;
 }
+/* ================ BODY SECTION STYLING END ================  */
+
+
+
+
+
+
 
 
  /* ================ NAVBAR SECTION STYLING START ================  */
-
 .navbar{
     background-color: #ec8f97 !important;
 }
@@ -55,11 +65,13 @@ body {
     padding: 1rem 2rem;
 }
 
-.navbar .container-fluid .contact-info {
-    color: #6b4c4c
+.navbar .container-fluid .contact-info p {
+    color: #ffffff
 }
-
  /* ================ NAVBAR SECTION STYLING END ================  */
+
+
+
 
 
 
@@ -69,6 +81,14 @@ main {
     max-width: 80%;
     margin: 0 auto;
 }
+/* ================ MAIN SECTION STYLING END ================  */
+
+
+
+
+
+
+
 
  /* ================ TAGLINE SECTION SHOWCASE STYLING START ================  */
 .tagline-showcase h2{
@@ -93,6 +113,11 @@ main {
  
  
  
+
+
+
+
+
  /* ================ HERO SECTION STYLING START ================  */
  
  .carousel-inner img{
@@ -104,9 +129,15 @@ main {
     color: #ec8f97;
  }
 
-
+.carousel-inner .para{
+    text-shadow: 3px 2px 2px rgba(15, 15, 15, 0.4); 
+}
 
  /* ================ HERO SECTION STYLING END ================  */
+
+
+
+
 
 
 
@@ -128,6 +159,7 @@ main {
         text-decoration: underline dashed;
 
     }
+
 .service_box {
     background: #fff;
     text-align: center;
@@ -157,7 +189,6 @@ main {
     display: block;
 }
 
-
 #hover_chang:hover.service_box h3 {
     color: #fff;
     transition: ease-in all 0.5s;
@@ -167,9 +198,12 @@ main {
     color: #fff;
     transition: ease-in all 0.5s;
 }
-
-
 /* ================ SERVICE SECTION STYLING END ================  */
+
+
+
+
+
 
 
 
@@ -203,9 +237,146 @@ main {
     font-weight: 500;
     margin-bottom: 30px !important;
 }
-/* ================ ABOUT SECTION STYLING START ================  */
+/* ================ ABOUT SECTION STYLING END ================  */
 
 
 
 
-/* ================ MAIN SECTION STYLING END ================  */
+
+
+
+
+/* ================ PRICING SECTION STYLING START ================  */
+.pricing{
+    margin-top: 10%;
+}
+
+
+.pricing .cards .pricing-card{
+    /* border: 1px solid red; */
+    box-shadow: #e58ab2 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.pricing .header h1 {
+    
+    background: linear-gradient(40deg, rgba(249,98,159,1) 0%, rgba(230,57,70,1) 25%, rgba(255,0,191,1) 50%, rgba(255,105,180,1) 100%);
+    color: transparent;
+    background-clip: text;
+}
+
+.pricing .cards .pricing-card{
+    border-radius: 15px;
+    padding-bottom: 0px !important;
+    margin-top: 30px;
+    transition: 0.8s ease-in-out;
+}
+.pricing .cards .pricing-card:hover{
+    background-color: #f03939;
+    border-radius: 50px;
+    color: #FFFFFF !important;
+}
+
+
+.pricing .cards .price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FB9EC6;
+    font-family: "Roboto", serif;
+}
+
+.pricing .cards h3{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:underline dotted;
+}
+.pricing .cards ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Alegreya", serif;
+}
+/* ================ PRICING SECTION STYLING END ================  */
+
+
+
+
+
+
+
+
+
+/* ================ GALLERY SECTION STYLING START ================  */
+.gallery {
+    padding: 60px 0;
+    background-color: #fef6f9;
+}
+
+.gallery .header h1 {
+    font-size: 2rem;
+    color: #b3005e;
+    margin-bottom: 10px;
+}
+
+.gallery .header h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.gallery .header h3 span {
+    color: #b3005e;
+    font-weight: bold;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item .video-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #b3005e;
+    font-weight: bold;
+}
+/* ================ GALLERY SECTION STYLING END ================  */
+
+
+
+
+
+
+
+/* ================ FOOTER SECTION STYLING START ================  */
+.footer{
+    background-color: #e58ab2;
+    color: #FFFFFF;
+}
+
+.footer .heading3 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.footer p{
+    color: #FFFFFF;
+}
+/* ================ FOOTER SECTION STYLING END ================  */
