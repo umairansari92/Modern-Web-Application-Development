@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+     font-size: 35px;
+     color: aquamarine;
+     background-color: brown;
+}
+.p{
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 25px;
+    border: 2px double darkolivegreen;
+    margin-top: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.p-2{
+    border: 2px dashed darkcyan;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 12px;
+}

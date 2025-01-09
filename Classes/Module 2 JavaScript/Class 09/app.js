@@ -1,12 +1,15 @@
-let participants = Array.from({ length: 40 }, (_, i) => `Bond ${i + 1}: ${Math.floor(Math.random() * 1000000)}`);
-let winners = {
-    firstPrize: participants.splice(Math.floor(Math.random() * participants.length), 1),
-    secondPrizes: [
-        participants.splice(Math.floor(Math.random() * participants.length), 1),
-        participants.splice(Math.floor(Math.random() * participants.length), 1),
-        participants.splice(Math.floor(Math.random() * participants.length), 1),
-    ],
-    thirdPrizes: participants
-};
+let students = [
+    { name: "Ali", marks: [85, 78, 92, 88, 76] },
+    { name: "Sara", marks: [65, 70, 60, 72, 68] },
+    { name: "Ahmed", marks: [90, 88, 95, 93, 91] },
+    // Add more students here...
+];
 
-console.log('Winners:', winners);
+for (let i = 0; i < students.length; i++) {
+    let student = students[i];
+    let totalMarks = student.marks.reduce((a, b) => a + b, 0);
+    document.write(`${student.name.toUpperCase()}: Total Marks = ${totalMarks}<br>`);
+}
+
+
+
