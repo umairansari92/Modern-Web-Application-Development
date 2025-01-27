@@ -47,14 +47,14 @@
 // console.log(str[18]);
 // var str = "saylani";
 
-var arr = ["lahore", "karachi"];
-var indexNum = arr.indexOf("lahore");
-console.log("indexNum", indexNum);
-if (indexNum == -1) {
-  alert("not found");
-} else {
-  alert("welcome");
-}
+// var arr = ["lahore", "karachi"];
+// var indexNum = arr.indexOf("lahore");
+// console.log("indexNum", indexNum);
+// if (indexNum == -1) {
+//   alert("not found");
+// } else {
+//   alert("welcome");
+// }
 
 // replace
 // var str = "With HTML you can create HTML your own Website.";

@@ -86,6 +86,53 @@ This repository contains my progress and work through the **Modern Web Applicati
   - [Real-Time Application 2: Prize Bond Winner List](#real-time-application-2-prize-bond-winner-list)
     - [Code:](#code-1)
     - [Explanation:](#explanation-1)
+  - [Class 13](#class-13)
+    - [For Loop Flags](#for-loop-flags)
+      - [Syntax](#syntax-3)
+      - [Explanation](#explanation-2)
+    - [Nested For Loops](#nested-for-loops)
+      - [Syntax](#syntax-4)
+      - [Example: Multiplication Table](#example-multiplication-table)
+    - [Break in For Loop](#break-in-for-loop)
+      - [Syntax](#syntax-5)
+      - [Output](#output)
+    - [Continue in For Loop](#continue-in-for-loop)
+      - [Syntax](#syntax-6)
+      - [Output](#output-1)
+    - [Confirm in For Loop](#confirm-in-for-loop)
+      - [Syntax](#syntax-7)
+      - [Example](#example-4)
+- [**Class 15**](#class-15)
+  - [**Topics Covered:**](#topics-covered-1)
+    - [**1. Find Index Number:**](#1-find-index-number)
+    - [**2. Replace a Word:**](#2-replace-a-word)
+    - [**3. `indexOf` Method:**](#3-indexof-method)
+    - [**4. `lastIndexOf` Method:**](#4-lastindexof-method)
+    - [**5. `indexOf` Return Values:**](#5-indexof-return-values)
+    - [**6. `indexOf` Usage:**](#6-indexof-usage)
+    - [**7. `replace` Method:**](#7-replace-method)
+    - [**Detailed Explanation of Methods:**](#detailed-explanation-of-methods)
+      - [**1. `indexOf`**](#1-indexof)
+      - [**2. `lastIndexOf`**](#2-lastindexof)
+      - [**3. `replace`**](#3-replace)
+      - [**4. `replaceAll`**](#4-replaceall)
+      - [**5. `charAt`**](#5-charat)
+      - [**6. Math Methods:**](#6-math-methods)
+- [**Class 16**](#class-16)
+  - [**Topics Covered:**](#topics-covered-2)
+    - [**1. Generating Random Numbers**](#1-generating-random-numbers)
+    - [**2. `Math.random()` Methods:**](#2-mathrandom-methods)
+    - [**3. Integers:**](#3-integers)
+    - [**4. Decimals:**](#4-decimals)
+    - [**5. Strings:**](#5-strings)
+    - [**6. Converting Strings to Integers and Decimals:**](#6-converting-strings-to-integers-and-decimals)
+    - [**7. Difference Between `parseInt` and `Number`:**](#7-difference-between-parseint-and-number)
+- [**Class 17**](#class-17)
+  - [**Topics Covered:**](#topics-covered-3)
+    - [**1. `toFixed()` Method:**](#1-tofixed-method)
+    - [**2. Nested Conditions:**](#2-nested-conditions)
+    - [**Key Points for Nested Conditions:**](#key-points-for-nested-conditions)
+    - [**Advanced Example:**](#advanced-example)
 
 ## Course Overview
 This course is designed to teach complete web and web application development, using modern frameworks and tools. Topics covered include:
@@ -1082,4 +1129,308 @@ console.log(`3rd Prize Winners: ${thirdPrizes.join(", ")}`);
 
 ---
 
-Feel free to ask if you need further explanation or modifications!
+
+## Class 13
+
+### For Loop Flags
+
+For loop flags are used to manage and control the flow of iterations within a loop. Flags are boolean variables (either `true` or `false`) that help in decision-making within loops.
+
+#### Syntax
+```javascript
+let flag = false;
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    flag = true;
+    break; // Example of using flag to stop the loop
+  }
+  console.log(i);
+}
+console.log("Flag status:", flag);
+```
+
+#### Explanation
+- `flag` starts as `false`.
+- The loop iterates from 0 to 4.
+- When `i` equals 3, `flag` becomes `true`, and the loop stops due to the `break` statement.
+
+---
+
+### Nested For Loops
+
+Nested loops are loops within loops. They are often used to iterate over multidimensional arrays or perform repeated actions within actions.
+
+#### Syntax
+```javascript
+for (let i = 0; i < 3; i++) {
+  console.log(`Outer loop iteration: ${i}`);
+  for (let j = 0; j < 2; j++) {
+    console.log(`  Inner loop iteration: ${j}`);
+  }
+}
+```
+
+#### Example: Multiplication Table
+```javascript
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 5; j++) {
+    console.log(`${i} x ${j} = ${i * j}`);
+  }
+}
+```
+
+---
+
+### Break in For Loop
+
+The `break` statement is used to exit the loop prematurely when a specific condition is met.
+
+#### Syntax
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    break; // Stops the loop when i equals 3
+  }
+  console.log(i);
+}
+```
+
+#### Output
+```
+0
+1
+2
+```
+
+---
+
+### Continue in For Loop
+
+The `continue` statement skips the current iteration and proceeds to the next one.
+
+#### Syntax
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue; // Skips the iteration when i equals 2
+  }
+  console.log(i);
+}
+```
+
+#### Output
+```
+0
+1
+3
+4
+```
+
+---
+
+### Confirm in For Loop
+
+The `confirm()` method displays a dialog box with a message and two buttons: OK and Cancel. It is commonly used for user confirmation in loops.
+
+#### Syntax
+```javascript
+for (let i = 0; i < 5; i++) {
+  let userResponse = confirm(`Continue iteration ${i}?`);
+  if (!userResponse) {
+    break; // Stops the loop if user clicks Cancel
+  }
+  console.log(`Iteration: ${i}`);
+}
+```
+
+#### Example
+- If the user clicks "OK", the loop continues.
+- If the user clicks "Cancel", the loop stops.
+
+
+---
+
+
+
+# **Class 15**
+
+## **Topics Covered:**
+
+### **1. Find Index Number:**
+- Strings aur arrays mein value ka index number dhundhne ke liye `indexOf` aur `lastIndexOf` methods use hote hain.
+
+### **2. Replace a Word:**
+- String mein kisi word ko replace karne ke liye `replace` aur `replaceAll` methods use hote hain.
+
+### **3. `indexOf` Method:**
+- `indexOf` hamesha pehle word ka index number return karega.
+
+### **4. `lastIndexOf` Method:**
+- `lastIndexOf` hamesha last se word ka index number return karega.
+
+### **5. `indexOf` Return Values:**
+- Jab `indexOf` "-1" return kare, iska matlab hai value string ya array mein nahi hai.
+
+### **6. `indexOf` Usage:**
+- `indexOf` string aur array ke andar se value find karke uska index return karta hai.
+
+### **7. `replace` Method:**
+- `replace` method string ke ek specific word ko kisi naye word se replace karta hai.
+
+### **Detailed Explanation of Methods:**
+
+#### **1. `indexOf`**
+- Example:
+  ```javascript
+  let str = "Hello, world!";
+  console.log(str.indexOf("world")); // Output: 7
+  ```
+
+#### **2. `lastIndexOf`**
+- Example:
+  ```javascript
+  let str = "Hello, world! Hello!";
+  console.log(str.lastIndexOf("Hello")); // Output: 13
+  ```
+
+#### **3. `replace`**
+- Example:
+  ```javascript
+  let str = "I love JavaScript!";
+  console.log(str.replace("JavaScript", "Python")); // Output: "I love Python!"
+  ```
+
+#### **4. `replaceAll`**
+- Example:
+  ```javascript
+  let str = "Banana, Banana, Banana";
+  console.log(str.replaceAll("Banana", "Apple")); // Output: "Apple, Apple, Apple"
+  ```
+
+#### **5. `charAt`**
+- Example:
+  ```javascript
+  let str = "Hello";
+  console.log(str.charAt(1)); // Output: "e"
+  ```
+
+#### **6. Math Methods:**
+- **`Math.round`**: Round off to the nearest integer.
+  ```javascript
+  console.log(Math.round(4.6)); // Output: 5
+  ```
+- **`Math.floor`**: Always round down.
+  ```javascript
+  console.log(Math.floor(4.6)); // Output: 4
+  ```
+- **`Math.ceil`**: Always round up.
+  ```javascript
+  console.log(Math.ceil(4.6)); // Output: 5
+  ```
+
+---
+
+
+# **Class 16**
+
+## **Topics Covered:**
+
+### **1. Generating Random Numbers**
+- Random numbers generate karne ke liye `Math.random()` use hota hai.
+
+### **2. `Math.random()` Methods:**
+- `Math.random()` 0 se 1 ke beech ek random decimal number generate karta hai.
+- Example:
+  ```javascript
+  console.log(Math.random()); // Output: 0.123456789 (example)
+  ```
+- Random integer generate karne ke liye:
+  ```javascript
+  let randomInt = Math.floor(Math.random() * 10); // 0 to 9
+  console.log(randomInt);
+  ```
+
+### **3. Integers:**
+- Whole numbers without decimals.
+  ```javascript
+  let int = 5;
+  ```
+
+### **4. Decimals:**
+- Numbers with fractional parts.
+  ```javascript
+  let decimal = 5.67;
+  ```
+
+### **5. Strings:**
+- Sequence of characters enclosed in quotes.
+  ```javascript
+  let str = "Hello";
+  ```
+
+### **6. Converting Strings to Integers and Decimals:**
+- `parseInt` and `parseFloat` use hote hain strings ko numbers mein convert karne ke liye.
+- Examples:
+  ```javascript
+  console.log(parseInt("123"));   // Output: 123
+  console.log(parseFloat("123.45")); // Output: 123.45
+  ```
+
+### **7. Difference Between `parseInt` and `Number`:**
+- `parseInt` sirf integer part read karta hai.
+  ```javascript
+  console.log(parseInt("123.45")); // Output: 123
+  ```
+- `Number` full value read karta hai.
+  ```javascript
+  console.log(Number("123.45")); // Output: 123.45
+  ```
+
+
+---
+
+
+# **Class 17**
+
+## **Topics Covered:**
+
+### **1. `toFixed()` Method:**
+- Numbers ko fixed decimal places tak round off karne ke liye use hota hai.
+- Example:
+  ```javascript
+  let num = 123.456;
+  console.log(num.toFixed(2)); // Output: "123.46"
+  ```
+
+### **2. Nested Conditions:**
+- Ek condition ke andar doosri condition ko check karna.
+- Example:
+  ```javascript
+  let marks = 85;
+  if (marks >= 50) {
+    if (marks >= 75) {
+      console.log("Distinction");
+    } else {
+      console.log("Pass");
+    }
+  } else {
+    console.log("Fail");
+  }
+  ```
+
+### **Key Points for Nested Conditions:**
+1. Complexity ko avoid karne ke liye logical operators (`&&`, `||`) use karein.
+2. Readability aur indentation ka dhyan rakhein.
+
+### **Advanced Example:**
+- Using Logical Operators:
+  ```javascript
+  let age = 25;
+  let gender = "Male";
+
+  if (age >= 18 && gender === "Male") {
+    console.log("Eligible for Military Service");
+  } else {
+    console.log("Not Eligible");
+  }
+  ```
