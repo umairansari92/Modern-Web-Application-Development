@@ -51,7 +51,7 @@
 // console.log(typeof str);
 // console.log(str);
 
-var number = String(12131); // number
-var number = 12131; // number
+// var number = String(12131); // number
+// var number = 12131; // number
 // convert num into str
-console.log(typeof number.toString());
+// console.log(typeof number.toString());
