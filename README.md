@@ -133,6 +133,59 @@ This repository contains my progress and work through the **Modern Web Applicati
     - [**2. Nested Conditions:**](#2-nested-conditions)
     - [**Key Points for Nested Conditions:**](#key-points-for-nested-conditions)
     - [**Advanced Example:**](#advanced-example)
+- [Class 18: JavaScript Control Flow \& String/Array Methods](#class-18-javascript-control-flow--stringarray-methods)
+  - [If Statements \& Nested If Statements](#if-statements--nested-if-statements)
+    - [If Statement](#if-statement)
+    - [Nested If Statement](#nested-if-statement)
+    - [Importance](#importance)
+  - [`!=` vs `!==`](#-vs-)
+    - [`!=` (Not Equal To)](#-not-equal-to)
+    - [`!==` (Strict Not Equal To)](#-strict-not-equal-to)
+    - [Importance](#importance-1)
+  - [Converting String to Array](#converting-string-to-array)
+    - [`string.split()`](#stringsplit)
+  - [Converting Array to String](#converting-array-to-string)
+    - [`array.join()`](#arrayjoin)
+  - [`array.reverse()`](#arrayreverse)
+  - [Getting Current Date \& Time](#getting-current-date--time)
+- [Class 19: JavaScript Date \& Functions](#class-19-javascript-date--functions)
+  - [Specifying a Date \& Time](#specifying-a-date--time)
+  - [Changing Date \& Time Elements](#changing-date--time-elements)
+  - [Functions in JavaScript](#functions-in-javascript)
+    - [Function Kya Hota Hai?](#function-kya-hota-hai)
+    - [Syntax](#syntax-8)
+    - [Importance](#importance-2)
+- [Class 24: JavaScript Functions \& Value Handling](#class-24-javascript-functions--value-handling)
+  - [Function Invocation](#function-invocation)
+    - [Function Invocation Kya Hota Hai?](#function-invocation-kya-hota-hai)
+    - [Function Invocation Ka Syntax](#function-invocation-ka-syntax)
+    - [Function Invocation Ki Types](#function-invocation-ki-types)
+    - [Function Invocation Ka Mechanism](#function-invocation-ka-mechanism)
+  - [`.value` Property](#value-property)
+    - [`.value` Kya Hai?](#value-kya-hai)
+    - [`.value` Ka Syntax](#value-ka-syntax)
+    - [Example - `.value` Ka Use Form Fields Ke Sath](#example---value-ka-use-form-fields-ke-sath)
+    - [`.value` Ki Importance](#value-ki-importance)
+  - [`setValue()`](#setvalue)
+    - [`setValue()` Kya Hai?](#setvalue-kya-hai)
+    - [`setValue()` Ka Use](#setvalue-ka-use)
+    - [Example - Value Set Karna](#example---value-set-karna)
+    - [`setValue()` Ki Importance](#setvalue-ki-importance)
+- [**Class 25: JavaScript Concepts in Detail**](#class-25-javascript-concepts-in-detail)
+  - [**1. Toggle Switch kya hai aur JavaScript mein kaise kaam karta hai?**](#1-toggle-switch-kya-hai-aur-javascript-mein-kaise-kaam-karta-hai)
+    - [**Example 1: Basic Toggle Switch**](#example-1-basic-toggle-switch)
+    - [**Kaise Kaam Karta Hai?**](#kaise-kaam-karta-hai)
+  - [**2. Difference between `.value` and `.innerHTML`**](#2-difference-between-value-and-innerhtml)
+    - [**Example: `.value`**](#example-value)
+    - [**Example: `.innerHTML`**](#example-innerhtml)
+      - [**Key Difference:**](#key-difference)
+  - [**3. JavaScript Events Kya Hain?**](#3-javascript-events-kya-hain)
+    - [**Example 1: Click Event**](#example-1-click-event)
+    - [**Example 2: Mouse Over Event**](#example-2-mouse-over-event)
+  - [**4. `javascript:void(0)` kya hai aur kaise kaam karta hai?**](#4-javascriptvoid0-kya-hai-aur-kaise-kaam-karta-hai)
+    - [**Problem without `javascript:void(0)`**](#problem-without-javascriptvoid0)
+    - [**Solution with `javascript:void(0)`**](#solution-with-javascriptvoid0)
+  - [**Class 25 Summary**](#class-25-summary)
 
 ## Course Overview
 This course is designed to teach complete web and web application development, using modern frameworks and tools. Topics covered include:
@@ -1434,3 +1487,426 @@ for (let i = 0; i < 5; i++) {
     console.log("Not Eligible");
   }
   ```
+
+
+
+# Class 18: JavaScript Control Flow & String/Array Methods
+
+## If Statements & Nested If Statements
+
+### If Statement
+`if` statement aik conditional statement hai jo kisi bhi condition ko check karta hai. Agar condition true ho to code execute hota hai, warna nahi hota.
+
+```js
+let age = 18;
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+}
+```
+
+### Nested If Statement
+Jab aik `if` statement ke andar doosra `if` statement hota hai to use **nested if** kehte hain.
+
+```js
+let age = 20;
+let hasID = true;
+
+if (age >= 18) {
+    if (hasID) {
+        console.log("You can enter.");
+    } else {
+        console.log("You need an ID to enter.");
+    }
+}
+```
+
+### Importance
+- Multiple conditions ko check karne ke liye useful hai.
+- Complex decision-making implement karne ke liye.
+- Form validations aur user inputs handle karne ke liye helpful hai.
+
+---
+
+## `!=` vs `!==`
+
+### `!=` (Not Equal To)
+Yeh operator sirf values compare karta hai, lekin data type ko nahi dekhta.
+
+```js
+console.log(5 != "5"); // false (value same hai, type ignore kiya gaya hai)
+```
+
+### `!==` (Strict Not Equal To)
+Yeh operator value aur type dono check karta hai.
+
+```js
+console.log(5 !== "5"); // true (value same hai, lekin type different hai)
+```
+
+### Importance
+- `!=` flexible hai, lekin kabhi kabhi unexpected results de sakta hai.
+- `!==` best practice hai kyunki yeh type checking bhi karta hai.
+
+---
+
+## Converting String to Array
+
+### `string.split()`
+Yeh method string ko array me convert karta hai.
+
+```js
+let str = "apple,banana,grape";
+let arr = str.split(",");
+console.log(arr); // ["apple", "banana", "grape"]
+```
+
+---
+
+## Converting Array to String
+
+### `array.join()`
+Yeh method array ko string me convert karta hai.
+
+```js
+let fruits = ["apple", "banana", "grape"];
+let str = fruits.join(", ");
+console.log(str); // "apple, banana, grape"
+```
+
+---
+
+## `array.reverse()`
+Yeh method array ke order ko ulta kar deta hai.
+
+```js
+let numbers = [1, 2, 3, 4, 5];
+numbers.reverse();
+console.log(numbers); // [5, 4, 3, 2, 1]
+```
+
+---
+
+## Getting Current Date & Time
+
+```js
+let currentDate = new Date();
+console.log(currentDate);
+```
+
+---
+
+# Class 19: JavaScript Date & Functions
+
+## Specifying a Date & Time
+Date specify karne ka tariqa:
+
+```js
+let specificDate = new Date("July 4, 2024 12:30:00");
+console.log(specificDate);
+```
+
+---
+
+## Changing Date & Time Elements
+
+```js
+let date = new Date();
+date.setFullYear(2025);
+date.setMonth(5);
+date.setDate(10);
+console.log(date);
+```
+
+---
+
+## Functions in JavaScript
+
+### Function Kya Hota Hai?
+Function aik block of code hota hai jo multiple dafa use ho sakta hai.
+
+### Syntax
+```js
+function greet(name) {
+    return "Hello, " + name;
+}
+console.log(greet("Umair"));
+```
+
+### Importance
+- Code reusability ke liye.
+- Maintainability aur readability behtar banane ke liye.
+- Code ko modular aur efficient banane ke liye.
+
+---
+
+# Class 24: JavaScript Functions & Value Handling
+
+## Function Invocation
+
+### Function Invocation Kya Hota Hai?
+JavaScript me **function invocation** ka matlab hota hai kisi function ko execute karna ya call karna. Jab ek function define kiya jata hai to wo sirf memory me store hota hai, lekin jab us function ko call kiya jata hai tabhi wo execute hota hai.
+
+### Function Invocation Ka Syntax
+```js
+function sayHello() {  // Function declaration
+    console.log("Hello, World!");
+}
+
+sayHello();  // Function invocation
+```
+
+### Function Invocation Ki Types
+
+1. **Direct Invocation** (Directly function ko call karna)
+   ```js
+   function greet() {
+       console.log("Good Morning!");
+   }
+   greet();
+   ```
+
+2. **Function as an Expression**
+   ```js
+   let greet = function() {
+       console.log("Good Evening!");
+   };
+   greet();
+   ```
+
+3. **Self-Invoking Function** (Immediately Invoked Function Expression - IIFE)
+   ```js
+   (function() {
+       console.log("This function runs immediately!");
+   })();
+   ```
+
+4. **Function with Parameters**
+   ```js
+   function sum(a, b) {
+       return a + b;
+   }
+   console.log(sum(5, 10));
+   ```
+
+### Function Invocation Ka Mechanism
+Jab ek function invoke hota hai to:
+1. JavaScript execution context create hota hai.
+2. Function ke andar jo bhi code hota hai wo execute hota hai.
+3. Agar function kisi value ko return kar raha ho to wo value wapas milti hai.
+
+---
+
+## `.value` Property
+
+### `.value` Kya Hai?
+`.value` ek property hai jo kisi input field ya form element ki value ko get ya set karne ke liye use hoti hai.
+
+### `.value` Ka Syntax
+```js
+let inputField = document.getElementById("name");
+console.log(inputField.value); // Value ko get karna
+inputField.value = "Umair"; // Value ko set karna
+```
+
+### Example - `.value` Ka Use Form Fields Ke Sath
+```html
+<input type="text" id="username" value="Default Name">
+<button onclick="showValue()">Show Value</button>
+
+<script>
+    function showValue() {
+        let username = document.getElementById("username").value;
+        alert("Entered Name: " + username);
+    }
+</script>
+```
+
+### `.value` Ki Importance
+- Form fields ki values ko access aur modify karne ke liye use hota hai.
+- User inputs ko retrieve karne me madad deta hai.
+- Data validation aur manipulation ke liye helpful hota hai.
+
+---
+
+## `setValue()`
+
+### `setValue()` Kya Hai?
+JavaScript me **directly `setValue()`** method nahi hota. Balki hum `.value` property ka use karke kisi input ki value set kar sakte hain.
+
+### `setValue()` Ka Use
+Agar kisi input field ki value ko dynamically set karna ho to `.value` ka use kiya jata hai.
+
+### Example - Value Set Karna
+```html
+<input type="text" id="userInput">
+<button onclick="setInputValue()">Set Value</button>
+
+<script>
+    function setInputValue() {
+        document.getElementById("userInput").value = "Hello World";
+    }
+</script>
+```
+
+### `setValue()` Ki Importance
+- Form inputs ki default values ko update karne ke liye.
+- User interaction ke basis pe dynamic values set karne ke liye.
+- Data validation aur auto-filling ke liye.
+
+---
+
+
+# **Class 25: JavaScript Concepts in Detail**
+
+Is class mein hum **Toggle Switch, `.value` vs `.innerHTML`, JavaScript Events**, aur **`javascript:void(0)`** ka detail mein samajhne wale hain. Har concept ko achi tarah samajhne ke liye examples bhi diye gaye hain.
+
+---
+
+## **1. Toggle Switch kya hai aur JavaScript mein kaise kaam karta hai?**
+
+**Definition:**  
+Toggle switch ek aisa UI element hai jo **on/off (true/false, 1/0)** state ko represent karta hai. Isko JavaScript mein **toggle function** ke zariye handle kiya jata hai.
+
+### **Example 1: Basic Toggle Switch**
+Ek simple toggle switch jo light mode aur dark mode change karega:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch Example</title>
+    <style>
+        body {
+            text-align: center;
+            transition: background 0.5s, color 0.5s;
+        }
+        .dark-mode {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Toggle Switch Example</h2>
+    <label>
+        <input type="checkbox" id="toggleSwitch">
+        Dark Mode
+    </label>
+
+    <script>
+        document.getElementById("toggleSwitch").addEventListener("change", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
+```
+
+### **Kaise Kaam Karta Hai?**
+1. **HTML Input Checkbox:** Ek checkbox diya gaya hai jo toggle ka kaam karega.
+2. **JavaScript Event Listener:** Jab checkbox click hoga, `change` event fire hoga.
+3. **Class Toggle:** `classList.toggle("dark-mode")` se dark mode apply/remove hoga.
+
+---
+
+## **2. Difference between `.value` and `.innerHTML`**  
+
+| **Property**  | **Kaam** |
+|--------------|----------|
+| `.value` | Input fields (text fields, forms, dropdowns) ki value get/set karta hai. |
+| `.innerHTML` | Kisi HTML element ka andar ka content get/set karta hai. |
+
+### **Example: `.value`**
+```html
+<input type="text" id="myInput" value="Hello World">
+<button onclick="showValue()">Get Value</button>
+<p id="output"></p>
+
+<script>
+    function showValue() {
+        let inputValue = document.getElementById("myInput").value;
+        document.getElementById("output").innerHTML = "Input Value: " + inputValue;
+    }
+</script>
+```
+
+### **Example: `.innerHTML`**
+```html
+<div id="content">Old Text</div>
+<button onclick="changeText()">Change Text</button>
+
+<script>
+    function changeText() {
+        document.getElementById("content").innerHTML = "New Updated Text";
+    }
+</script>
+```
+
+#### **Key Difference:**
+- **`.value` sirf form fields ke liye kaam karta hai.**
+- **`.innerHTML` kisi bhi HTML element ka content change kar sakta hai.**
+
+---
+
+## **3. JavaScript Events Kya Hain?**
+JavaScript events wo actions hain jo **user ya browser** perform karta hai, jaise:
+- **Click karna (`onclick`)**
+- **Mouse hover (`onmouseover`)**
+- **Keyboard key press (`onkeydown`)**
+- **Form submit (`onsubmit`)**
+
+### **Example 1: Click Event**
+```html
+<button onclick="sayHello()">Click Me</button>
+<p id="message"></p>
+
+<script>
+    function sayHello() {
+        document.getElementById("message").innerHTML = "Hello, World!";
+    }
+</script>
+```
+
+### **Example 2: Mouse Over Event**
+```html
+<p id="hoverText" onmouseover="changeColor()">Hover over me</p>
+
+<script>
+    function changeColor() {
+        document.getElementById("hoverText").style.color = "red";
+    }
+</script>
+```
+
+---
+
+## **4. `javascript:void(0)` kya hai aur kaise kaam karta hai?**  
+
+`javascript:void(0)` ek aisi JavaScript expression hai jo **kuch return nahi karti** aur browser ko kisi naye page par redirect hone se rokta hai.
+
+### **Problem without `javascript:void(0)`**
+Agar hum `<a>` tag ka **href="#"** use karein to page top pe scroll ho jata hai.
+
+```html
+<a href="#" onclick="alert('Hello!')">Click me</a>
+```
+
+### **Solution with `javascript:void(0)`**
+```html
+<a href="javascript:void(0)" onclick="alert('Hello!')">Click me</a>
+```
+
+---
+
+## **Class 25 Summary**
+
+| Concept | Explanation |
+|---------|------------|
+| **Toggle Switch** | Ek UI element jo **on/off state** ko toggle karta hai. |
+| **`.value` vs `.innerHTML`** | `.value` **input fields** ke liye hota hai, `.innerHTML` kisi bhi HTML element ke content ke liye hota hai. |
+| **JavaScript Events** | User ya browser actions ko handle karne ke liye use hotay hain (click, hover, keypress, etc.). |
+| **`javascript:void(0)`** | Prevents `<a>` tag from refreshing or redirecting the page. |
+
+Agar koi aur confusion ho to batao! 🚀
