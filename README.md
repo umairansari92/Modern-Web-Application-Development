@@ -1,4 +1,7 @@
-#﻿﻿# Modern Web Application Development
+
+---
+#﻿﻿ Modern Web Application Development
+
 
 This repository contains my progress and work through the **Modern Web Application Development** course. Each folder in this repository represents a class or assignment, where I explore various aspects of frontend and backend development using modern tools and frameworks.
 
