@@ -155,6 +155,51 @@ This repository contains my progress and work through the **Modern Web Applicati
     - [Function Kya Hota Hai?](#function-kya-hota-hai)
     - [Syntax](#syntax-8)
     - [Importance](#importance-2)
+- [**Class 20: JavaScript Functions**](#class-20-javascript-functions)
+  - [**1. Functions Kya Hain?**](#1-functions-kya-hain)
+    - [**Functions Kyun Use Kartay Hain?**](#functions-kyun-use-kartay-hain)
+    - [**Example: Function ka Basic Use**](#example-function-ka-basic-use)
+  - [**2. JavaScript Function Syntax**](#2-javascript-function-syntax)
+    - [**A. Function Declaration**](#a-function-declaration)
+    - [**B. Function Expression**](#b-function-expression)
+    - [**C. Arrow Function (ES6)**](#c-arrow-function-es6)
+    - [**D. Immediately Invoked Function Expression (IIFE)**](#d-immediately-invoked-function-expression-iife)
+  - [**3. Parameters Aur Arguments Kya Hain?**](#3-parameters-aur-arguments-kya-hain)
+    - [**Example: Parameters aur Arguments**](#example-parameters-aur-arguments)
+    - [**Types of Parameters**](#types-of-parameters)
+      - [**1. Default Parameters**](#1-default-parameters)
+      - [**2. Rest Parameters (Multiple Arguments)**](#2-rest-parameters-multiple-arguments)
+  - [**4. Simple Calculator using Function**](#4-simple-calculator-using-function)
+- [**Class 21: Advanced JavaScript Functions**](#class-21-advanced-javascript-functions)
+  - [**1. Predefined Parameters**](#1-predefined-parameters)
+    - [**Example: Default Parameters**](#example-default-parameters)
+  - [**2. Function aur Return Keyword**](#2-function-aur-return-keyword)
+    - [**Example: Return Keyword**](#example-return-keyword)
+  - [**3. Multiple Return Statements**](#3-multiple-return-statements)
+    - [**Example: Multiple Returns**](#example-multiple-returns)
+- [**Class 22: Parameters, Arguments, and Scope**](#class-22-parameters-arguments-and-scope)
+  - [**1. Parameters and Arguments**](#1-parameters-and-arguments)
+  - [**2. Return Keyword**](#2-return-keyword)
+    - [**Example:**](#example-5)
+  - [**3. Local vs. Global Variables**](#3-local-vs-global-variables)
+  - [**4. JavaScript Scope**](#4-javascript-scope)
+- [📌 **Class 23 - JavaScript Functions \& DOM Manipulation**](#-class-23---javascript-functions--dom-manipulation)
+  - [**🔹 1. JavaScript Functions**](#-1-javascript-functions)
+    - [**Example 1:** Ek Simple Function jo `alert` show kare](#example-1-ek-simple-function-jo-alert-show-kare)
+  - [**🔹 2. DOM se Value Lena (`getElementById()`)**](#-2-dom-se-value-lena-getelementbyid)
+    - [**Example 2:** Input se value lena aur console mein print karna:](#example-2-input-se-value-lena-aur-console-mein-print-karna)
+    - [**HTML Code (Button ke sath):**](#html-code-button-ke-sath)
+  - [**🔹 3. JavaScript se Input Field ki Value Set Karna**](#-3-javascript-se-input-field-ki-value-set-karna)
+    - [**Example 3:** Input field ko JavaScript se value dena:](#example-3-input-field-ko-javascript-se-value-dena)
+    - [**HTML Code (Button ke sath):**](#html-code-button-ke-sath-1)
+  - [**🔹 4. Event Handling - Button Click se Function Call Karna**](#-4-event-handling---button-click-se-function-call-karna)
+    - [**Example 4:** Button ke through function call karna:](#example-4-button-ke-through-function-call-karna)
+  - [**🔹 Full Code (JavaScript + HTML)**](#-full-code-javascript--html)
+  - [**🔹 5. Common Errors aur Solutions**](#-5-common-errors-aur-solutions)
+    - [✅ **1. `getElementById()` mein Galat ID likhna**](#-1-getelementbyid-mein-galat-id-likhna)
+    - [✅ **2. `console.log(userNameInput.value)` Error**](#-2-consolelogusernameinputvalue-error)
+  - [**🎯 Class 23 ka Summary**](#-class-23-ka-summary)
+  - [**🎯 Aap Kya Seekh Chuke Ho?**](#-aap-kya-seekh-chuke-ho)
 - [Class 24: JavaScript Functions \& Value Handling](#class-24-javascript-functions--value-handling)
   - [Function Invocation](#function-invocation)
     - [Function Invocation Kya Hota Hai?](#function-invocation-kya-hota-hai)
@@ -1639,6 +1684,375 @@ console.log(greet("Umair"));
 
 ---
 
+
+
+# **Class 20: JavaScript Functions**
+
+## **1. Functions Kya Hain?**
+Functions JavaScript ka aik ahem hissa hain jo code ko reusable banatay hain. Yeh aik block of code hota hai jo kisi specific task ko perform karta hai.
+
+### **Functions Kyun Use Kartay Hain?**
+- Code ko **reusable** banata hai.  
+- Code ko **organize** aur **modular** banata hai.  
+- **Debugging** aur **maintenance** asaan hoti hai.  
+
+### **Example: Function ka Basic Use**
+```js
+function greet() {
+    console.log("Assalam-o-Alaikum! Kaise hain aap?");
+}
+greet(); // Function ko call karna
+```
+
+---
+
+## **2. JavaScript Function Syntax**
+JavaScript mein function ko 4 tareeqon se define kiya ja sakta hai:
+
+### **A. Function Declaration**
+```js
+function sayHello() {
+    console.log("Hello, World!");
+}
+sayHello();
+```
+
+### **B. Function Expression**
+```js
+const sayHi = function() {
+    console.log("Hi, everyone!");
+};
+sayHi();
+```
+
+### **C. Arrow Function (ES6)**
+```js
+const greetUser = () => {
+    console.log("Welcome to JavaScript!");
+};
+greetUser();
+```
+
+### **D. Immediately Invoked Function Expression (IIFE)**
+```js
+(function() {
+    console.log("Yeh function turant execute ho gaya!");
+})();
+```
+
+---
+
+## **3. Parameters Aur Arguments Kya Hain?**
+**Parameters** woh variables hain jo function define karte waqt likhe jate hain, jabke **arguments** woh actual values hain jo function call karte waqt pass ki jati hain.
+
+### **Example: Parameters aur Arguments**
+```js
+function greetPerson(name) { // name is parameter
+    console.log("Hello, " + name + "!");
+}
+greetPerson("Ali"); // "Ali" is argument
+```
+
+### **Types of Parameters**
+
+#### **1. Default Parameters**
+```js
+function greet(name = "Guest") {
+    console.log("Welcome, " + name);
+}
+greet();      // Output: Welcome, Guest
+greet("Umair"); // Output: Welcome, Umair
+```
+
+#### **2. Rest Parameters (Multiple Arguments)**
+```js
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(2, 4, 6, 8)); // Output: 20
+```
+
+---
+
+## **4. Simple Calculator using Function**
+```js
+function calculator(num1, num2, operator) {
+    switch (operator) {
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            return num2 !== 0 ? num1 / num2 : "Division by zero not allowed";
+        default:
+            return "Invalid operator!";
+    }
+}
+
+console.log(calculator(5, 3, '+')); // Output: 8
+console.log(calculator(10, 2, '*')); // Output: 20
+console.log(calculator(15, 5, '/')); // Output: 3
+console.log(calculator(7, 4, '-')); // Output: 3
+```
+
+---
+
+# **Class 21: Advanced JavaScript Functions**
+
+## **1. Predefined Parameters**
+Predefined parameters woh values hain jo function define karte waqt set ki jati hain taake agar user koi argument pass na kare toh default value use ho sake.
+
+### **Example: Default Parameters**
+```js
+function greet(name = "Guest") {
+    console.log("Hello, " + name + "!");
+}
+greet();      // Output: Hello, Guest!
+greet("Ali"); // Output: Hello, Ali!
+```
+
+Agar user koi argument pass nahi karega toh function default value ko use karega.
+
+---
+
+## **2. Function aur Return Keyword**
+By default, function koi value return nahi karta, sirf execute hota hai. Agar humein function se koi value chahiye toh `return` keyword ka use karna hoga.
+
+### **Example: Return Keyword**
+```js
+function add(a, b) {
+    return a + b;
+}
+let result = add(5, 3);
+console.log(result); // Output: 8
+```
+
+Agar function sirf `console.log` karega, toh uski value store nahi ki ja sakti.
+
+---
+
+## **3. Multiple Return Statements**
+Ek function ke andar multiple return statements ho sakti hain, magar sirf pehla `return` execute hoga.
+
+### **Example: Multiple Returns**
+```js
+function checkNumber(num) {
+    if (num > 0) return "Positive";
+    if (num < 0) return "Negative";
+    return "Zero";
+}
+console.log(checkNumber(5));  // Output: Positive
+console.log(checkNumber(-3)); // Output: Negative
+console.log(checkNumber(0));  // Output: Zero
+```
+
+---
+
+# **Class 22: Parameters, Arguments, and Scope**
+
+## **1. Parameters and Arguments**
+Hum function ko value de rahay hain (parameters) aur function humein value de raha hai (return statement).
+
+## **2. Return Keyword**
+Agar function value return karega, toh usay ek variable main store karna zaroori hai.
+
+### **Example:**
+```js
+function multiply(a, b) {
+    return a * b;
+}
+let result = multiply(4, 5);
+console.log(result); // Output: 20
+```
+
+## **3. Local vs. Global Variables**
+Local variables sirf function ke andar available hoti hain, jabke global variables puray program mein access kiye ja sakte hain.
+
+```js
+let globalVar = "I am global";
+function testScope() {
+    let localVar = "I am local";
+    console.log(globalVar); // Accessible
+    console.log(localVar); // Accessible
+}
+testScope();
+console.log(globalVar); // Accessible
+console.log(localVar); // Error: not defined
+```
+
+## **4. JavaScript Scope**
+Scope ka matlab hai ke variables kahaan accessible hain.
+- **Global Scope**: Poore program mein accessible.
+- **Function Scope**: Sirf function ke andar accessible.
+- **Block Scope**: `{}` ke andar sirf accessible (let, const).
+
+```js
+if (true) {
+    let blockVar = "I am inside block";
+}
+console.log(blockVar); // Error: not defined
+```
+
+
+
+
+# 📌 **Class 23 - JavaScript Functions & DOM Manipulation**
+
+Aaj ki class ka focus **JavaScript functions** aur **DOM manipulation** par tha. Yeh class **HTML ke input fields ke sath kaam karna, JavaScript se values lena aur set karna** cover karti hai.  
+
+## **🔹 1. JavaScript Functions**
+JavaScript mein **function** ek block of code hota hai jo tab execute hota hai jab usay call kiya jaye. Functions ka fayda yeh hai ke aap ek kaam ko multiple dafa bina repetition ke use kar sakte ho.
+
+### **Example 1:** Ek Simple Function jo `alert` show kare
+```js
+function greet() {
+    alert("HELLO WORLD");
+}
+
+greet(); // Function ko call kiya
+```
+Jab yeh function execute hoga to ek pop-up alert show karega.
+
+---
+
+## **🔹 2. DOM se Value Lena (`getElementById()`)**
+Agar humein kisi HTML input field se **user ka entered data** lena ho, to hum `document.getElementById()` use karte hain.
+
+### **Example 2:** Input se value lena aur console mein print karna:
+```js
+function getInputValue() {
+    var userName = document.getElementById("userName"); // Input field ko access kiya
+    console.log("User Name:", userName.value); // Value ko console mein print kiya
+}
+```
+
+### **HTML Code (Button ke sath):**
+```html
+<input type="text" id="userName" placeholder="Enter Username" />
+<button onclick="getInputValue()">Get Value</button>
+```
+
+---
+
+## **🔹 3. JavaScript se Input Field ki Value Set Karna**
+Agar hum chahte hain ke JavaScript kisi input field ko automatically value assign kare, to hum `.value` property use karte hain.
+
+### **Example 3:** Input field ko JavaScript se value dena:
+```js
+function setValue() {
+    var userName = document.getElementById("userName");
+    var password = document.getElementById("password");
+
+    userName.value = "jaffaraman";  // Username set kar diya
+    password.value = "123456789";  // Password set kar diya
+}
+```
+
+### **HTML Code (Button ke sath):**
+```html
+<input type="text" id="userName" placeholder="Enter Username" />
+<input type="password" id="password" placeholder="Enter Password" />
+<button onclick="setValue()">Set Value</button>
+```
+
+---
+
+## **🔹 4. Event Handling - Button Click se Function Call Karna**
+Jab koi user **button click** kare aur koi function execute ho, isay **event handling** kehte hain.
+
+### **Example 4:** Button ke through function call karna:
+```html
+<button onclick="getInputValue()">GET Value</button>
+<button onclick="setValue()">SET Value</button>
+```
+
+## **🔹 Full Code (JavaScript + HTML)**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 23 - JavaScript Functions</title>
+</head>
+<body>
+
+    <input type="text" id="userName" placeholder="Enter Username" />
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button onclick="getInputValue()">GET Value</button>
+    <button onclick="setValue()">SET Value</button>
+
+    <script>
+        function getInputValue() {
+            var userName = document.getElementById("userName");
+            var password = document.getElementById("password");
+
+            console.log("Username:", userName.value);
+            console.log("Password:", password.value);
+        }
+
+        function setValue() {
+            var userName = document.getElementById("userName");
+            var password = document.getElementById("password");
+
+            userName.value = "jaffaraman";
+            password.value = "123456789";
+        }
+    </script>
+
+</body>
+</html>
+```
+
+---
+
+## **🔹 5. Common Errors aur Solutions**
+### ✅ **1. `getElementById()` mein Galat ID likhna**
+Agar aap **input field ki ID galat likh dein**, to `null` value milegi.
+```js
+var userName = document.getElementById("username"); // Galat ID
+console.log(userName.value); // Error dega!
+```
+**✅ Solution:** ID ko exactly waise likho jaise HTML mein hai.
+
+### ✅ **2. `console.log(userNameInput.value)` Error**
+Aapke code mein yeh error hai:
+```js
+console.log("userNameInput", userNameInput.value);
+```
+**Error:** `userNameInput` variable define nahi kiya gaya.
+
+**✅ Solution:** Isay replace karein:
+```js
+console.log("userName", userName.value);
+```
+
+---
+
+## **🎯 Class 23 ka Summary**
+| **Concept** | **Explanation** | **Example** |
+|------------|---------------|------------|
+| **Function Creation** | Code block jo call hone par execute hota hai | `function greet() { alert("Hello!"); }` |
+| **Function Call** | Function ko run karne ke liye usay call karna | `greet();` |
+| **DOM Manipulation** | HTML elements ko JavaScript se access aur modify karna | `document.getElementById("userName")` |
+| **Getting Input Value** | User ke entered data ko get karna | `console.log(userName.value);` |
+| **Setting Input Value** | Input field ko JavaScript se value assign karna | `userName.value = "John";` |
+| **Event Handling** | Button click par function call karna | `<button onclick="getInputValue()">Click</button>` |
+
+---
+
+## **🎯 Aap Kya Seekh Chuke Ho?**
+✅ JavaScript functions kaise banta aur kaise call hota hai.  
+✅ `document.getElementById()` se input field ko access karna.  
+✅ `.value` property se input field ki value lena aur set karna.  
+✅ Event handling kaise kaam karti hai.  
+
+
+
+
+
 # Class 24: JavaScript Functions & Value Handling
 
 ## Function Invocation
@@ -1909,4 +2323,5 @@ Agar hum `<a>` tag ka **href="#"** use karein to page top pe scroll ho jata hai.
 | **JavaScript Events** | User ya browser actions ko handle karne ke liye use hotay hain (click, hover, keypress, etc.). |
 | **`javascript:void(0)`** | Prevents `<a>` tag from refreshing or redirecting the page. |
 
-Agar koi aur confusion ho to batao! 🚀
+
+---
