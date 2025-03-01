@@ -44,7 +44,7 @@
 // var str = "With HTML you can create HTML your own Website.";
 // console.log(str.indexOf("HTML"));
 // console.log(str.lastIndexOf("HTML"));
-// console.log(str[18]);
+// console.log(str[5]);
 // var str = "saylani";
 
 // var arr = ["lahore", "karachi"];
