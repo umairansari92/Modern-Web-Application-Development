@@ -2328,7 +2328,7 @@ Agar hum `<a>` tag ka **href="#"** use karein to page top pe scroll ho jata hai.
 ---
 
 
-# **Class 25: THE DOM
+# **Class 34: THE DOM
 
 ## **DOM aur Child Nodes ki Tafseel**  
 
