@@ -6,19 +6,6 @@
 This repository contains my progress and work through the **Modern Web Application Development** course. Each folder in this repository represents a class or assignment, where I explore various aspects of frontend and backend development using modern tools and frameworks.
 
 ## Table of Contents
-- [Modern Web Application Development](#modern-web-application-development)
-  - [Table of Contents](#table-of-contents)
-  - [Course Overview](#course-overview)
-  - [Technologies Covered](#technologies-covered)
-  - [Book Reference](#book-reference)
-  - [Class Overview](#class-overview)
-    - [Class 1](#class-1)
-    - [Class 2](#class-2)
-    - [Class 3](#class-3)
-    - [Class 4](#class-4)
-    - [Class 5](#class-5)
-      - [Example:](#example)
-    - [Button Example](#button-example)
 - [Advantages of Bootstrap](#advantages-of-bootstrap)
 - [Disadvantages of Bootstrap](#disadvantages-of-bootstrap)
   - [Comparisons with Other Front-End Frameworks](#comparisons-with-other-front-end-frameworks)
@@ -234,6 +221,17 @@ This repository contains my progress and work through the **Modern Web Applicati
     - [**Problem without `javascript:void(0)`**](#problem-without-javascriptvoid0)
     - [**Solution with `javascript:void(0)`**](#solution-with-javascriptvoid0)
   - [**Class 25 Summary**](#class-25-summary)
+- [\*\*Class 25: THE DOM](#class-25-the-dom)
+  - [**DOM aur Child Nodes ki Tafseel**](#dom-aur-child-nodes-ki-tafseel)
+    - [**DOM (Document Object Model) Kya Hai?**](#dom-document-object-model-kya-hai)
+    - [**Nodes Kya Hotay Hain?**](#nodes-kya-hotay-hain)
+    - [**Child Nodes Kya Hotay Hain?**](#child-nodes-kya-hotay-hain)
+      - [**Example:**](#example-6)
+    - [**DOM Tree Representation:**](#dom-tree-representation)
+    - [**Child Nodes ka Tashreeh:**](#child-nodes-ka-tashreeh)
+    - [**Child Nodes Ka JavaScript se Access Karna**](#child-nodes-ka-javascript-se-access-karna)
+    - [**Child Nodes aur Children ka Farq**](#child-nodes-aur-children-ka-farq)
+    - [**Conclusion:**](#conclusion-1)
 
 ## Course Overview
 This course is designed to teach complete web and web application development, using modern frameworks and tools. Topics covered include:
@@ -2328,3 +2326,80 @@ Agar hum `<a>` tag ka **href="#"** use karein to page top pe scroll ho jata hai.
 
 
 ---
+
+
+# **Class 25: THE DOM
+
+## **DOM aur Child Nodes ki Tafseel**  
+
+### **DOM (Document Object Model) Kya Hai?**  
+DOM ek programming interface hai jo web pages ko represent karta hai. Jab ek web page browser me load hota hai, to browser us page ka ek structured representation banata hai, jo ek tree (shajrah) ki tarah hoti hai. Is structure ko **DOM Tree** kaha jata hai.  
+
+### **Nodes Kya Hotay Hain?**  
+DOM me **node** aik element ya object hota hai jo page ke kisi bhi part ko represent karta hai. Nodes mukhtalif qisam ke hotay hain, jinme **element nodes, text nodes, comment nodes, attribute nodes,** etc. shamil hain.  
+
+Har HTML element ek node hota hai, aur isi wajah se inko "nodes" kaha jata hai. Kyunki DOM ek tree structure hai, is wajah se har node kisi na kisi doosri node se connected hoti hai.  
+
+### **Child Nodes Kya Hotay Hain?**  
+Jab ek node ke andar doosri nodes mojood hoti hain, to unhe **child nodes** kaha jata hai. Har node jo doosri node ke andar hoti hai, uski **child node** kehlati hai, aur jo node isko contain karti hai, wo **parent node** hoti hai.  
+
+#### **Example:**  
+Agar hum ek simple HTML ka structure dekhein:  
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+```
+
+### **DOM Tree Representation:**  
+```
+- Document
+  ├── html (Root Node)
+      ├── head
+      │   ├── title
+      │       ├── "My Page" (Text Node)
+      ├── body
+          ├── h1
+          │   ├── "Hello World" (Text Node)
+          ├── p
+              ├── "This is a paragraph." (Text Node)
+```
+
+### **Child Nodes ka Tashreeh:**  
+1. **html** node ke **do child nodes** hain: `head` aur `body`.
+2. **head** node ke andar `title` node mojood hai, jo iska **child node** hai.
+3. **title** node ke andar `"My Page"` likha gaya hai, jo ek **text node** hai.
+4. **body** node ke andar `h1` aur `p` nodes hain, jo iske **child nodes** hain.
+5. **h1** aur **p** nodes ke andar text mojood hai, jo inke **text nodes** hain.
+
+### **Child Nodes Ka JavaScript se Access Karna**  
+Agar humein kisi element ke child nodes dekhne hain to JavaScript me `childNodes` property ka istemal hota hai.  
+
+```javascript
+let bodyNode = document.body;
+console.log(bodyNode.childNodes);  // Body ke andar jitni bhi child nodes hain wo array ki form me milein gi
+```
+
+### **Child Nodes aur Children ka Farq**  
+1. **childNodes** → Yeh **NodeList** return karta hai jo **elements, text nodes aur comments** sabko include karta hai.  
+2. **children** → Yeh sirf **element nodes** ko return karta hai.  
+
+```javascript
+console.log(document.body.childNodes); // Isme text, comments, aur elements sab ayenge
+console.log(document.body.children);   // Isme sirf elements (h1, p etc.) ayenge
+```
+
+### **Conclusion:**  
+- DOM ek tree structure hai jisme har element ek **node** hota hai.  
+- Nodes ko is wajah se **nodes** kaha jata hai kyunki ye ek tree structure ka hissa hotay hain.  
+- Jo nodes kisi aur node ke andar hoti hain unhe **child nodes** kaha jata hai.  
+- JavaScript me `childNodes` aur `children` ka use karke inko access kiya jata hai.  
+
