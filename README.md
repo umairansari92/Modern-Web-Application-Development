@@ -221,7 +221,7 @@ This repository contains my progress and work through the **Modern Web Applicati
     - [**Problem without `javascript:void(0)`**](#problem-without-javascriptvoid0)
     - [**Solution with `javascript:void(0)`**](#solution-with-javascriptvoid0)
   - [**Class 25 Summary**](#class-25-summary)
-- [\*\*Class 25: THE DOM](#class-25-the-dom)
+- [\*\*Class 34: THE DOM](#class-34-the-dom)
   - [**DOM aur Child Nodes ki Tafseel**](#dom-aur-child-nodes-ki-tafseel)
     - [**DOM (Document Object Model) Kya Hai?**](#dom-document-object-model-kya-hai)
     - [**Nodes Kya Hotay Hain?**](#nodes-kya-hotay-hain)
