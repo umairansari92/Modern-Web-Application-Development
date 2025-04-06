@@ -232,6 +232,18 @@ This repository contains my progress and work through the **Modern Web Applicati
     - [**Child Nodes Ka JavaScript se Access Karna**](#child-nodes-ka-javascript-se-access-karna)
     - [**Child Nodes aur Children ka Farq**](#child-nodes-aur-children-ka-farq)
     - [**Conclusion:**](#conclusion-1)
+  - [**Class 35: DOM Traversal aur Child Nodes ka Amal**](#class-35-dom-traversal-aur-child-nodes-ka-amal)
+    - [✅ **HTML Structure:**](#-html-structure)
+    - [✅ **JavaScript Traversal aur Console Examples:**](#-javascript-traversal-aur-console-examples)
+      - [**1. `document.childNodes[1]`**](#1-documentchildnodes1)
+      - [**2. `document.childNodes[1].childNodes[2].childNodes[1]`**](#2-documentchildnodes1childnodes2childnodes1)
+      - [**3. `.childNodes` vs `.children`**](#3-childnodes-vs-children)
+      - [**4. `getElementById` ka use:**](#4-getelementbyid-ka-use)
+      - [**5. First and Last Element Access:**](#5-first-and-last-element-access)
+      - [**6. Sibling Traversal:**](#6-sibling-traversal)
+      - [**7. Complex Traversal Example:**](#7-complex-traversal-example)
+    - [🔍 **Important DOM Properties Used in Class 35:**](#-important-dom-properties-used-in-class-35)
+    - [🎯 **Summary:**](#-summary)
 
 ## Course Overview
 This course is designed to teach complete web and web application development, using modern frameworks and tools. Topics covered include:
@@ -2402,4 +2414,117 @@ console.log(document.body.children);   // Isme sirf elements (h1, p etc.) ayenge
 - Nodes ko is wajah se **nodes** kaha jata hai kyunki ye ek tree structure ka hissa hotay hain.  
 - Jo nodes kisi aur node ke andar hoti hain unhe **child nodes** kaha jata hai.  
 - JavaScript me `childNodes` aur `children` ka use karke inko access kiya jata hai.  
+
+
+## **Class 35: DOM Traversal aur Child Nodes ka Amal**
+
+Is class mein hum ne DOM (Document Object Model) ke concepts ko practically explore kiya aur ye samjha ke kis tarah se browser HTML ko ek tree structure mein convert karta hai. Hum ne JavaScript ke zariye DOM traversal (yaani tree ke andar se nodes ko access karna) ka tariqa seekha.
+
+---
+
+### ✅ **HTML Structure:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>THE DOM</h1>
+    <div id="pappa">
+      <p>Child 1</p>
+      <p>Child 2</p>
+      <p>Child 3</p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
+```
+
+Is HTML mein ek `div` element hai jiska `id="pappa"` hai. Iske andar teen `<p>` elements hain — Child 1, Child 2, aur Child 3.
+
+---
+
+### ✅ **JavaScript Traversal aur Console Examples:**
+
+#### **1. `document.childNodes[1]`**
+```javascript
+console.log(document.childNodes[1]);
+```
+- Yeh `<html>` element ko return karta hai.
+- DOM ke top level par `document` hota hai, uske child nodes mein `<!DOCTYPE>`, `<html>`, etc. hote hain.
+
+#### **2. `document.childNodes[1].childNodes[2].childNodes[1]`**
+```javascript
+console.log(document.childNodes[1].childNodes[2].childNodes[1]);
+```
+- `childNodes[1]` → `<html>`
+- `.childNodes[2]` → `<body>`
+- `.childNodes[1]` → `<div id="pappa">`
+
+**Note:** Agar beech mein white space ya line break ho to text nodes bhi count hotay hain, is liye index carefully use karna chahiye.
+
+#### **3. `.childNodes` vs `.children`**
+```javascript
+console.log(document.childNodes[1].childNodes);
+console.log(document.childNodes[1].children);
+```
+- `.childNodes` sab nodes ko return karta hai (text, comments, elements sab).
+- `.children` sirf element nodes ko return karta hai (ignores text nodes).
+
+#### **4. `getElementById` ka use:**
+```javascript
+var pappa = document.getElementById("pappa");
+```
+Yeh line `div#pappa` ko JavaScript mein reference banata hai.
+
+#### **5. First and Last Element Access:**
+```javascript
+console.log(pappa.firstElementChild); // <p>Child 1</p>
+console.log(pappa.lastElementChild);  // <p>Child 3</p>
+```
+
+#### **6. Sibling Traversal:**
+```javascript
+console.log(pappa.firstElementChild.nextElementSibling); // <p>Child 2</p>
+```
+- Yeh first `<p>` ke baad wala `<p>` return karega.
+
+#### **7. Complex Traversal Example:**
+```javascript
+console.log(
+  pappa.lastElementChild.previousElementSibling.previousElementSibling.parentNode
+);
+```
+**Breakdown:**
+- `lastElementChild` → `<p>Child 3</p>`
+- `previousElementSibling` → `<p>Child 2</p>`
+- `previousElementSibling` again → `<p>Child 1</p>`
+- `parentNode` → `<div id="pappa">`
+
+✅ Yeh pura code wapas `div#pappa` tak pahuanch jata hai — yeh DOM traversal ka live example hai.
+
+---
+
+### 🔍 **Important DOM Properties Used in Class 35:**
+| Property                 | Explanation |
+|--------------------------|-------------|
+| `.childNodes`           | Sabhi nodes ko return karta hai (elements, text, comments). |
+| `.children`             | Sirf element nodes return karta hai. |
+| `.firstElementChild`    | Pehla element child (text node ko ignore karta hai). |
+| `.lastElementChild`     | Akhri element child. |
+| `.nextElementSibling`   | Agla bhai node (sibling). |
+| `.previousElementSibling` | Pehla bhai node (sibling). |
+| `.parentNode`           | Parent node tak le jata hai. |
+| `getElementById()`      | Kisi element ko uske `id` se access karta hai. |
+
+---
+
+### 🎯 **Summary:**
+- DOM ka structure ek tree ki tarah hota hai.
+- Har HTML element ek **node** hota hai.
+- Nodes ko JavaScript se traverse karne ke liye `childNodes`, `children`, `firstElementChild`, `parentNode`, etc. ka use hota hai.
+- Traversal ka ye tariqa dynamic websites mein content manipulate karne ke liye zaroori hota hai.
 
