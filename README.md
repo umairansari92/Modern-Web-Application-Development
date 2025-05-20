@@ -244,6 +244,17 @@ This repository contains my progress and work through the **Modern Web Applicati
       - [**7. Complex Traversal Example:**](#7-complex-traversal-example)
     - [🔍 **Important DOM Properties Used in Class 35:**](#-important-dom-properties-used-in-class-35)
     - [🎯 **Summary:**](#-summary)
+- [📘 Class 48: JavaScript - Objects](#-class-48-javascript---objects)
+  - [🔷 JavaScript mein Constructor Function kya hota hai?](#-javascript-mein-constructor-function-kya-hota-hai)
+    - [➤ Constructor Function kaise likhte hain?](#-constructor-function-kaise-likhte-hain)
+    - [📌 Important Points:](#-important-points)
+  - [🔷 Prototype kya hota hai?](#-prototype-kya-hota-hai)
+    - [➤ Example:](#-example)
+    - [📌 Fayda:](#-fayda)
+  - [🔁 Summary (in Urdu):](#-summary-in-urdu)
+  - [🎓 Real-World Example: Student Constructor Function](#-real-world-example-student-constructor-function)
+    - [📝 Output:](#-output)
+    - [💡 Samajhne wali baat:](#-samajhne-wali-baat)
 
 ## Course Overview
 This course is designed to teach complete web and web application development, using modern frameworks and tools. Topics covered include:
@@ -2527,4 +2538,125 @@ console.log(
 - Har HTML element ek **node** hota hai.
 - Nodes ko JavaScript se traverse karne ke liye `childNodes`, `children`, `firstElementChild`, `parentNode`, etc. ka use hota hai.
 - Traversal ka ye tariqa dynamic websites mein content manipulate karne ke liye zaroori hota hai.
+
+
+
+
+# 📘 Class 48: JavaScript - Objects
+
+## 🔷 JavaScript mein Constructor Function kya hota hai?
+
+Constructor function JavaScript ka ek special function hota hai jo **object banane ke liye** use hota hai.
+
+### ➤ Constructor Function kaise likhte hain?
+
+```javascript
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+
+  this.greet = function () {
+    console.log("Hello, my name is " + this.name);
+  };
+}
+
+const person1 = new Person("Ali", 25);
+const person2 = new Person("Sara", 30);
+
+person1.greet(); // Hello, my name is Ali
+```
+
+### 📌 Important Points:
+- Constructor function ka naam **capital letter** se shuru hota hai (e.g., `Person`).
+- `this` keyword ka use hota hai properties/methods define karne ke liye.
+- Constructor ko call karte waqt **`new` keyword** use karte hain.
+
+---
+
+## 🔷 Prototype kya hota hai?
+
+Har JavaScript object ke paas ek **hidden prototype object** hota hai. Jab aap constructor function banate ho, to aap `prototype` ka use karke common methods define kar sakte ho — jo **saare objects share karte hain**.
+
+### ➤ Example:
+
+```javascript
+Person.prototype.sayAge = function () {
+  console.log("I am " + this.age + " years old.");
+};
+
+person1.sayAge(); // I am 25 years old.
+```
+
+### 📌 Fayda:
+- Agar aap method ko prototype mein rakhte hain, to woh memory mein ek hi baar banta hai.
+- **Saare objects usko share karte hain**, jisse performance better hoti hai.
+
+---
+
+## 🔁 Summary (in Urdu):
+
+- Constructor function ek **blueprint** hai object banane ke liye.
+- `new` keyword se **naya object** create hota hai.
+- `this` keyword se properties/methods define ki jaati hain.
+- `prototype` ka use **shared methods** ke liye hota hai.
+
+---
+
+## 🎓 Real-World Example: Student Constructor Function
+
+```javascript
+// Constructor Function
+function Student(name, className, rollNo) {
+  this.name = name;
+  this.className = className;
+  this.rollNo = rollNo;
+
+  this.displayInfo = function () {
+    console.log("Name: " + this.name);
+    console.log("Class: " + this.className);
+    console.log("Roll No: " + this.rollNo);
+  };
+}
+
+// Prototype Method (shared by all students)
+Student.prototype.schoolName = "Iqra School";
+
+Student.prototype.showSchool = function () {
+  console.log("School: " + Student.prototype.schoolName);
+};
+
+// Creating student objects
+const student1 = new Student("Ahmed", "10th", 23);
+const student2 = new Student("Fatima", "9th", 12);
+
+// Using methods
+student1.displayInfo();
+student1.showSchool();
+
+student2.displayInfo();
+student2.showSchool();
+```
+
+### 📝 Output:
+```
+Name: Ahmed
+Class: 10th
+Roll No: 23
+School: Iqra School
+
+Name: Fatima
+Class: 9th
+Roll No: 12
+School: Iqra School
+```
+
+---
+
+### 💡 Samajhne wali baat:
+
+- Har student ka apna **naam, class aur roll number** hota hai.
+- Lekin **school name sab students ka common** hota hai, isliye `prototype` mein daala gaya.
+- Is se memory save hoti hai aur code efficient banta hai.
+
+
 
