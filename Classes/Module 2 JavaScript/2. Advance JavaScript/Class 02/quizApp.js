@@ -170,7 +170,6 @@ function uiRender() {
 
     options.innerHTML = ""
     for (var key in optionList) {
-        console.log(optionList[key])
         options.innerHTML += `<li onclick="checkAns(this)" >${optionList[key]}</li>`
     }
 
@@ -182,7 +181,7 @@ function uiRender() {
 }
 
 
-
+// Moves to the next question or ends the quiz if all questions are done.
 
 function nextQues() {
     indexNumber++
@@ -191,18 +190,18 @@ function nextQues() {
         uiRender()
         count.innerHTML = `${indexNumber + 1} / ${quizQuestions.length} `
     } else {
-        console.log("QUIZ SUBMIT")
-        console.log("correctAnsCount", correctAnsCount)
-        console.log("wrongAnsCount", wrongAnsCount)
-        console.log("Total no of question", quizQuestions.length)
-        console.log("PERCENTAGE", (correctAnsCount / quizQuestions.length) * 100)
+        // console.log("QUIZ SUBMIT")
+        // console.log("correctAnsCount", correctAnsCount)
+        // console.log("wrongAnsCount", wrongAnsCount)
+        // console.log("Total no of question", quizQuestions.length)
+        // console.log("PERCENTAGE", (correctAnsCount / quizQuestions.length) * 100)
         const percentage = (correctAnsCount / quizQuestions.length) * 100
 
 
         let rank;
         if (percentage < 60) {
-            console.log("TATA BYE BYE")
             rank = "F"
+            return("TATA BYE BYE")
         } else {
             rank = "P"
             console.log("pappu pass hogaya")
